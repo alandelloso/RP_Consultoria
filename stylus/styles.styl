@@ -1,0 +1,442 @@
+//Variables
+bodybg = #EEE
+color1 = #F29700
+color2 = #D98700
+color3 = #B26F00
+color4 = #734800
+color5 = #332000
+facebook = #3B5999
+gplus = #BC2D1D
+linkedin = #2A497F
+muli = 'Muli', sans-serif
+textob = #DDD
+textow = #555
+twitter = #1AB2E8
+//VISION 1
+a
+	color color1
+
+#nuestra-estrategia
+	padding  0 1em
+
+#pic1
+	display none
+
+#post-volunt
+	background color1
+	border solid 2px color3
+	border-radius 10px
+	display inline-block
+	height 70px
+	transition all .5s ease-in
+	&:hover
+		background color2
+
+#postulacion-voluntaria
+	background rgba(0,0,0,0.5)
+	border solid 3px textow
+	color textob
+	display none
+	margin .3em
+	overflow hidden
+	text-align center
+	span
+		color color1
+		font-weight bold
+	div, input
+		margin .3em 0 
+	.post-enviar
+		background color1
+		border solid 2px color3
+		border-radius 10px
+		transition all .5s ease
+		width 150px
+		height 50px
+		&:hover
+			background color2
+
+
+
+#quienes-somos
+	padding  0 1em
+
+#title
+	text-align center
+
+#lastup
+	text-align left
+
+.leermas
+	display inline-block
+
+#valores
+	padding  0 1em
+
+.busqueda-new
+	background rgba(0,0,0,0.5)
+	border solid 2px #000
+	border-radius  10px 
+	color textob
+	margin .5em
+	max-width 545px
+	p
+		margin .2em
+		text-align left
+		display inline-block
+	.busqueda-botones
+		text-align center
+		.boton 
+			background color1
+			border solid 2px color4
+			border-radius 10px
+			display inline-block
+			height 30px 
+			margin  .5em .2em
+			max-height 30px
+			max-width 120px
+			transition all .5s ease-in
+			width 120px
+			a 
+				color black
+				display block 
+				padding .30em
+				text-decoration none
+			&:hover.boton
+				background color2
+	.busqueda-title
+		background rgba(0,0,0,0.3)
+		border-radius  10px 10px 0 0
+		font-size 16pt
+		padding-left .2em
+		text-align left
+		p
+			margin 0
+
+.busquedas-postularme
+	background rgba(0,0,0,0.5)
+	border-radius 0 0 10px 10px
+	display none
+	text-align center
+	span
+		color color1
+	div
+		margin-top .5em
+	.post-cv
+		margin-bottom 1em
+	.post-enviar
+		background color2
+		border none
+		border-radius 10px
+		height 30px
+		margin-bottom .5em
+		transition all .5s ease
+		width 100px
+		&:hover
+			background color3
+	.post-file
+		border solid 2px color2
+		border-radius 10px
+		width 250px
+
+.busquedas-social
+	background rgba(0,0,0,0.5)
+	border-radius 0 0 10px 10px
+	display none
+	height 5em
+	max-width 545px 
+	padding-top 1em
+	text-align center
+	ul
+		list-style none
+		margin 0
+		padding 0
+		li
+			display inline-block
+			font-size 23px
+			margin .2em
+			a
+				color #FFF
+				text-decoration none
+
+.b-facebook 
+	background facebook
+	border solid 3px #0D2E70
+	border-radius 10px
+	margin 0
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em
+		text-decoration none
+	&:hover
+		background #4F79B7
+
+.b-gplus
+	background gplus
+	border solid 3px #961212
+	border-radius 10px
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em
+		text-decoration none
+	&:hover
+		background #EF392B
+
+.b-mail 
+	background #FCBD30
+	border solid 3px #AD7E21
+	border-radius 10px
+	margin 0
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em .47em
+		text-decoration none
+	&:hover
+		background #EAA00A
+
+.b-twitter 
+	background twitter
+	border solid 3px #0D7F99
+	border-radius 10px
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em
+		text-decoration none
+	&:hover
+		background #2DCEF9
+
+.impar
+	display none
+
+.main-title
+	margin-left 10px
+
+.right
+	text-align center
+
+#mision-vision
+	background textob
+	border-radius 10px
+	margin 1em
+	padding .3em
+	text-align center
+	#mision
+		display inline-block
+		text-align center
+		vertical-align top
+		img
+			width 27px
+		p
+			width 130px
+			text-align left
+	#vision 
+		display inline-block
+		margin-left 1em
+		text-align center
+		vertical-align top
+		img
+			width 32px
+		p
+			text-align left
+			width 130px
+
+
+//Mision y Vision Mas Grande
+@media (min-width: 500px)
+	#mision-vision
+		#mision
+			p
+				text-align left
+				width 210px
+		#vision
+			p
+				text-align left
+				width 210px
+
+	.busquedas-postularme
+		.post-nombre
+			display inline-block
+		.post-apellido
+			display inline-block
+		.post-file
+			width 380px
+
+	.main-title
+		text-align left
+
+//Postulacion de busqueda max lenght
+@media (min-width: 580px)
+	.busquedas-postularme
+		.post-mail
+			display inline-block
+
+@media (min-width: 770px)
+	.impar
+		display none
+
+
+//VISION 2
+@media (min-width: 825px)
+	hr
+		clear both
+
+	section
+		text-align center
+
+	.busqueda-new
+		display inline-block
+
+	.post-nombre, .post-apellido, .post-mail, .post-categoria
+			display inline-block
+
+	#hr2
+		display none
+
+	#nuestra-estrategia
+		display inline-block
+		margin-left 1em
+		text-align left
+		vertical-align top
+		p
+			width 365px
+			text-align justify
+
+	#mision-vision
+		display inline-block
+		width 350px
+		#mision
+			p
+				text-align left
+				width 130px
+		#vision
+			p
+				text-align left
+				width 130px
+
+	#miviuen
+		text-align center
+
+	#quienes-somos
+		p
+			text-align justify
+
+	#valores
+			text-align left
+
+	.impar
+		display none
+
+
+@media (min-width: 980px)
+	#mision-vision
+		width 500px
+		#mision
+			p
+				text-align left
+				width 210px
+		#vision
+			p
+				text-align left
+				width 210px
+
+	#miviuen
+		text-align center
+
+	
+	.impar
+		visibility hidden
+
+
+@media (min-width: 1200px)
+
+	#hr1
+		display none
+
+	#hr3
+		clear both
+
+	#nuestra-estrategia
+		display inline-block
+		float none
+		text-align left
+		p
+			text-align justify
+			width 30em
+
+	#mision-vision
+		display inline-block
+		float none
+		max-width 30em
+		width 30em
+		#mision
+			p
+				text-align left
+				width 200px
+		#vision
+			p
+				text-align left
+				width 200px
+
+	#miviuen
+		display inline-block
+		margin-right 1em
+		max-width 32em
+		padding 0
+		text-align center
+		vertical-align top
+
+	#pic1
+		display inline-block
+		padding-left 4em
+		img
+			width 400px
+			border-radius 20px
+
+	#quienes-somos
+		display inline-block
+		text-align left
+		margin-right 2em
+		padding 0
+		p
+			text-align justify
+			width 36em
+
+	#valores
+		text-align left
+		display inline-block
+		padding-right 5em
+		padding-left 0
+		vertical-align top
+		ul
+			text-align justify
+			width 36em
+
+	.busqueda-new
+		display inline-block
+		vertical-align top
+		.busqueda-botones
+			text-align right 
+			.boton
+				text-align center
+
+	.ccontainer
+		max-width 1270px
+		padding 0 10px
+		margin 0 auto
+		overflow hidden
+
+	.impar
+		visibility hidden
+
+

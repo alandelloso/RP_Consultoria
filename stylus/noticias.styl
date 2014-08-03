@@ -1,0 +1,186 @@
+//Variables
+bodybg = #EEE
+color1 = #F29700
+color2 = #D98700
+color3 = #B26F00
+color4 = #734800
+color5 = #332000
+facebook = #3B5999
+gplus = #BC2D1D
+linkedin = #2A497F
+muli = 'Muli', sans-serif
+textob = #DDD
+textow = #555
+twitter = #1AB2E8
+
+/*Vista 1*/
+select
+	border 1px solid color1
+	color color2
+	display block
+	margin-left .5em
+
+.block-me
+	display block
+
+.b-facebook 
+	background facebook
+	border solid 3px #0D2E70
+	border-radius 10px
+	margin 0
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em
+		text-decoration none
+	&:hover
+		background #4F79B7
+
+
+.b-gplus
+	background gplus
+	border solid 3px #961212
+	border-radius 10px
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em
+		text-decoration none
+	&:hover
+		background #EF392B
+
+.b-mail 
+	background #FCBD30
+	border solid 3px #AD7E21
+	border-radius 10px
+	margin 0
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em .47em
+		text-decoration none
+	&:hover
+		background #EAA00A
+
+.b-twitter 
+	background twitter
+	border solid 3px #0D7F99
+	border-radius 10px
+	transition all .5s ease-in
+	a 
+		color white
+		cursor pointer
+		display block
+		padding .5em
+		text-decoration none
+	&:hover
+		background #2DCEF9
+
+.center
+	text-align center
+
+.noticia-new
+	background rgba(0,0,0,0.5)
+	border solid 2px #000
+	color textob
+	margin .5em
+	max-width 545px
+	text-align left
+	p
+		margin .2em
+		text-align justify
+
+	.noticia-botonholder
+		text-align right
+		.boton 
+			background color1
+			border solid 2px color4
+			border-radius 10px
+			cursor pointer
+			display inline-block
+			height 30px 
+			margin  .5em .2em
+			max-height 30px
+			max-width 120px
+			text-align center
+			transition all .5s ease-in
+			width 120px
+			a 
+				color black
+				display block 
+				padding .30em
+				text-decoration none
+			&:hover.boton
+				background color2
+
+	.noticia-leer
+		color color1
+		display inline
+		padding-left .5em
+		text-decoration none
+
+	.noticia-tag
+		background color2
+		margin-top 1em
+		padding 2.5px 0
+		text-align right
+		width 110px
+
+	.noticia-title
+		background rgba(0,0,0,0.3)
+		font-size 16pt
+		padding-left .2em
+		text-align left
+		p
+			margin 0
+
+.noticia-social
+	background rgba(0,0,0,0.5)
+	display none
+	height 5em
+	max-width 545px 
+	padding-top 1em
+	text-align center
+	ul
+		list-style none
+		margin 0
+		padding 0
+		li
+			display inline-block
+			font-size 23px
+			margin .2em
+			a
+				color #FFF
+				text-decoration none
+
+.main-title
+	margin-left .3em
+
+@media (min-width: 570px)
+	.ccontainer
+		max-width 1270px
+		padding 0 10px
+		margin 0 auto
+		overflow hidden
+
+@media (min-width: 1200px)
+
+	.block-me
+		.noticia-new
+			display block
+
+	.ccontainer
+		max-width 1270px
+		padding 0 10px
+		margin 0 auto
+		overflow hidden
+
+	.noticia-new
+		display inline-block
+		vertical-align top

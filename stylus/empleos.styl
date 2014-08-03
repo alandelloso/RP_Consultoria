@@ -1,0 +1,82 @@
+//Variables
+bodybg = #EEE
+color1 = #F29700
+color2 = #D98700
+color3 = #B26F00
+color4 = #734800
+color5 = #332000
+facebook = #3B5999
+gplus = #BC2D1D
+linkedin = #2A497F
+muli = 'Muli', sans-serif
+textob = #DDD
+textow = #555
+twitter = #1AB2E8
+
+//VISTA
+form
+	background rgba(0,0,0,0.5)
+	border solid 3px color2
+	border-radius 20px
+	color textob
+	max-width 400px
+	overflow hidden
+	text-align center
+	span
+		color color1
+		font-weight bold
+	.post-apellido, .post-nombre
+		display inline-block
+
+.busqueda-activa
+	display none
+
+.center-me
+	text-align center
+
+.left-side
+	p
+		max-width 50em
+		text-align justify
+	a 
+		color color1
+	ul
+		li 
+			max-width 50em
+			text-align justify
+.post-enviar
+	background color1
+	border solid 2px color3
+	border-radius 10px
+	height 50px
+	margin-bottom .5em
+	transition all .5s ease
+	&:hover
+		background color2
+
+.referencia
+	font-weight bold
+
+.ccontainer
+	max-width 1270px
+	padding 0 10px
+	margin 0 auto
+	overflow hidden
+
+@media (min-width: 500px)
+	form
+		display inline-block
+
+@media (min-width: 1200px)
+	.busqueda-activa
+		display inline-block
+		margin-left 100px 
+		margin-top 100px 
+		vertical-align top
+		width 200px
+
+	.left-side
+		display inline-block
+
+	.post-mail
+		padding-top .5em

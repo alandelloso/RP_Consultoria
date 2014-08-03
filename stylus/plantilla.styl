@@ -1,0 +1,475 @@
+//Fuentes
+@import url("http://fonts.googleapis.com/css?family=Muli")
+@import url("http://fonts.googleapis.com/css?family=Headland+One")
+//Iconos
+@font-face
+  font-family 'icomoon'
+  src url('../fonts/icomoon.eot?hay6bj')
+  src url('../fonts/icomoon.eot?#iefixhay6bj') format('embedded-opentype'),
+ url('../fonts/icomoon.woff?hay6bj') format('woff'),
+		url('../fonts/icomoon.ttf?hay6bj') format('truetype'),
+		url('../fonts/icomoon.svg?hay6bj#icomoon') format('svg')
+  font-weight normal
+  font-style normal
+
+[class^="icon-"], [class*=" icon-"]
+  font-family 'icomoon'
+  speak none
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+.icon-menu
+  &:before
+    content "\e604"
+
+.icon-arrow-up
+  &:before
+    content "\e600"
+
+.icon-arrow-down
+  &:before
+    content "\e601"
+
+.icon-add
+  &:before
+    content "\e602"
+
+.icon-subtract
+  &:before
+    content "\e603"
+
+.icon-chevron-left
+  &:before
+    content "\e606"
+
+.icon-twitter
+  &:before
+    content "\e607"
+
+.icon-facebook
+  &:before
+    content "\e608"
+
+.icon-google-plus
+  &:before
+    content "\e609"
+
+.icon-linkedin
+  &:before
+    content "\e60a"
+
+//Variables
+bodybg = #EEE
+color1 = #F29700
+color2 = #D98700
+color3 = #B26F00
+color4 = #734800
+color5 = #332000
+facebook = #3B5999
+gplus = #BC2D1D
+linkedin = #2A497F
+muli = 'Muli', sans-serif
+textob = #DDD
+textow = #555
+twitter = #1AB2E8
+//VISTA 1
+//Estilos por TAG
+body
+	background bodybg
+	color textow
+	font-family muli
+	font-size 16px
+
+footer
+	background color5
+	color bodybg
+	height 85px
+	max-height 85px
+	text-align center
+	p 
+		margin 0
+		padding .2em 0
+
+h1
+	color color3
+	font-family muli
+
+h2
+	color color1
+	font-family muli
+	margin 0
+
+header
+	background color2
+	height 50px
+	max-height 50px
+	overflow hidden
+	padding .1em .3em
+	figure
+		display inline-block
+		float right
+	h2
+		color bodybg
+		display inline-block
+		margin-top .4em
+	#hgroup
+		p
+			display none
+	img
+		width 70px
+	#social
+		display none
+
+
+hr
+	border solid 2px color1
+	margin 1em
+
+nav
+	display none
+
+//Estilos por ID
+#mmovile
+	background color3
+	color bodybg
+	height 40px
+	max-height 40px
+	overflow hidden
+	text-align center
+	a 
+		color bodybg
+		float left
+		font-size 20px
+		margin .45em .3em
+		text-decoration none
+	p
+		display inline-block
+		font-family muli
+		margin .55em 0
+
+#mnav
+	-moz-transition all .5s ease-out
+	-ms-transition all .5s ease-out
+	-o-transition all .5s ease-out
+	-webkit-transition all .5s ease-out
+	background rgba(0,0,0,0.9)
+	border-radius 0 0 10px 10px
+	height 150%
+	left -15em
+	min-height 150%
+	min-width 15em
+	overflow hidden
+	position absolute
+	p
+		color color1
+		display inline-block
+		font-family muli
+		font-size 20px
+		margin .5em 0 .5em .5em
+	ul
+		list-style none
+		padding 0
+		li
+			border-bottom solid 3px color1
+			font-size 18px
+			transition all .5s ease
+			&:hover
+				border-bottom solid 3px color4
+			a
+				color bodybg
+				display block
+				padding 1.5em 0 .5em 1em
+				text-decoration none
+	#cerrar
+		background color1
+		border-bottom solid 2px color3
+		border-left solid 2px color3
+		cursor pointer
+		float right
+		height 50px
+		position relative
+		text-align center
+		top -5.5%
+		transition all .5s ease
+		width 50px
+		&:hover
+			background color3
+			padding-right 15px
+		#flechita
+			color bodybg
+			font-size 1.5em
+			margin-top .5em
+
+#msocial
+	background color4
+	color bodybg
+	font-family muli
+	height 40px
+	max-height 40px
+	overflow hidden
+	p
+		display inline-block
+		margin .55em 0 .55em .3em
+	ul 
+		display inline-block
+		float right
+		list-syle none
+		margin 0 .3em 0 0 
+		padding 0
+		li 
+			display inline-block
+			font-size 30px
+		a
+			color bodybg
+			display block
+			padding .20em .35em
+			text-decoration none
+	#m-facebook
+		-webkit-transition all .5s ease
+		-moz-transition all .5s ease
+		-o-transition all .5s ease
+		-ms-transition all .5s ease
+		&:hover
+			color facebook
+	#m-twitter
+		-webkit-transition all .5s ease
+		-moz-transition all .5s ease
+		-o-transition all .5s ease
+		-ms-transition all .5s ease
+		&:hover
+			color twitter
+	#m-gplus
+		-webkit-transition all .5s ease
+		-moz-transition all .5s ease
+		-o-transition all .5s ease
+		-ms-transition all .5s ease
+		&:hover
+			color gplus
+	#m-linkedin
+		-webkit-transition all .5s ease
+		-moz-transition all .5s ease
+		-o-transition all .5s ease
+		-ms-transition all .5s ease
+		&:hover
+			color linkedin
+
+//VISTA 2
+@media (min-width: 845px)
+	#mnav, #msocial, #mmovile
+		display none
+
+	nav
+		background color3
+		display block
+		height 40px
+		max-height 40px
+		overflow hidden
+		#tsocial
+			display inline-block
+			float right
+			padding-right .5em
+			p
+				color bodybg
+				display inline-block
+				margin 0
+				float left
+				padding .65em 1em .2em 0
+			ul
+				li
+					border none
+					a
+						border none
+						font-size 30px
+						padding .20em .25em .1em .25em
+		#t-facebook
+			-webkit-transition all .5s ease
+			-moz-transition all .5s ease
+			-o-transition all .5s ease
+			-ms-transition all .5s ease
+			&:hover
+				color facebook
+		#t-twitter
+			-webkit-transition all .5s ease
+			-moz-transition all .5s ease
+			-o-transition all .5s ease
+			-ms-transition all .5s ease
+			&:hover
+				color twitter
+		#t-gplus
+			-webkit-transition all .5s ease
+			-moz-transition all .5s ease
+			-o-transition all .5s ease
+			-ms-transition all .5s ease
+			&:hover
+				color gplus
+		#t-linkedin
+			-webkit-transition all .5s ease
+			-moz-transition all .5s ease
+			-o-transition all .5s ease
+			-ms-transition all .5s ease
+			&:hover
+				color linkedin
+		ul
+			display inline-block
+			list-syle none
+			margin 0
+			padding 0
+			li
+				border-right 1px solid #FFF
+				display inline-block
+				margin 0
+				padding 0
+				&:hover a
+					border-bottom 5px solid color1
+					
+				a
+					border-bottom 5px solid color5
+					color #FFF
+					display block
+					padding .65em 1em .25em 1em
+					text-decoration none
+					-webkit-transition all .8s ease
+					-moz-transition all .8s ease
+					-o-transition all .8s ease
+					-ms-transition all .8s ease
+
+//VISTA 3
+@media (min-width: 1165px)
+	header 
+		overflow hidden
+		background-color color1
+		height 100px
+		max-height 100px
+		#hgroup
+			display inline-block
+			vertical-align top
+			#h1
+				color chgroup
+				display inline-block
+				font-family muli
+				font-size 36pt 
+				margin 0
+				padding 0 
+			p
+				color textob
+				display inline-block
+				font-family muli
+				font-size 18pt
+				margin 0
+				padding 0 
+		#social
+			display inline-block
+			text-align center
+			float right
+			p
+				color bodybg
+				font-family muli
+				font-size 13pt
+				margin 0
+				padding 0 
+			ul 
+				margin .2em 0 0 0
+				padding 0
+				text-align center
+				li 
+					display inline-block
+					font-size 1.2em
+					list-style none
+					margin-right .3em
+
+	nav
+		ul
+			li
+				&:first-child
+					border-left 1px solid #FFF
+				a
+					padding .65em 1em .26em 1em
+
+		#tsocial
+			display none
+
+	#facebook 
+		background facebook
+		border solid 3px #0D2E70
+		border-radius 10px
+		margin 0
+		transition all .5s ease-in
+		a 
+			color white
+			cursor pointer
+			display block
+			padding .6em
+			text-decoration none
+		&:hover
+			background #4F79B7
+
+	#gplus
+		background gplus
+		border solid 3px #961212
+		border-radius 10px
+		transition all .5s ease-in
+		a 
+			color white
+			cursor pointer
+			display block
+			padding .6em
+			text-decoration none
+		&:hover
+			background #EF392B
+
+	#linkedin
+		background linkedin
+		border solid 3px #06214C
+		border-radius 10px
+		transition all .5s ease-in
+		a 
+			color white
+			cursor pointer
+			display block
+			padding .6em
+			text-decoration none
+		&:hover
+			background #3A64A3
+
+	#logo
+		display inline-block
+		float left
+		img
+			width 130px
+
+	#twitter 
+		background twitter
+		border solid 3px #0D7F99
+		border-radius 10px
+		transition all .5s ease-in
+		a 
+			color white
+			cursor pointer
+			display block
+			padding .6em
+			text-decoration none
+		&:hover
+			background #2DCEF9
+
+	.container
+		position: relative;
+		background: inherit;
+		padding: 0 10px;
+		margin: 0 auto;
+		max-width: 1270px;
+		height: 120%;
+		background-image url("../img/mundo.png")
+		background-position 75% top 
+		background-size 390px
+		background-repeat no-repeat
+
+	.navcontainer
+		max-width: 1270px;
+		padding: 0 10px;
+		margin: 0 auto;
+	

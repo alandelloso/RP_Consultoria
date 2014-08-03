@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="RP Consultoría: Asesoramiento integral para su empresa" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>RP Consultoría - Búsquedas</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/plantilla.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+	<div id="mnav">
+		<p>Menú</p>
+		<div id="cerrar">
+			<div id="flechita" class="icon-chevron-left"></div>
+		</div>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="asesoramiento.html">Asesoramiento</a></li>
+			<li><a href="busquedas.html">Búsquedas</a></li>
+			<li><a href="noticias.html">Noticias</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</div>
+	<header>
+		<div class="container">
+			<figure id="logo">
+				<img src="img/logo.png" alt="Logo RP">
+			</figure>
+			<div id="social">
+				<p>Seguinos En:</p>
+				<ul>
+					<li id="facebook" ><a href="https://www.facebook.com/consultoriaRP" target=_blank class="icon-facebook"></a></li>
+					<li id="twitter"><a href="http://www.twitter.com/consultorarp" target=_blank class="icon-twitter"></a></li>
+					<li id="gplus"><a href="https://plus.google.com/u/0/b/116129234397509918956/+RPConsultoriaBuenosAires/posts" target=_blank class="icon-google-plus"></a></li>
+					<li id="linkedin"><a href="#" class="icon-linkedin"></a></li>
+				</ul>
+			</div>
+			<div id="hgroup">
+				<h2 id="h1">RP Consultoria</h2><br>
+				<p>Asesoramiento Integral Para Su Empresa</p>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="navcontainer">
+			<ul>
+				<li><a href="index.html">Inicio</a></li><li><a href="asesoramiento.html">Asesoramiento</a></li><li><a href="busquedas.html">Búsquedas</a></li><li><a href="noticias.html">Noticias</a></li><li><a href="contacto.html">Contacto</a></li>
+			</ul>
+			<div id="tsocial">
+				<p>Seguinos En:</p>
+				<ul>
+					<li><a href="https://www.facebook.com/consultoriaRP" class="icon-facebook" id="t-facebook"></a></li><li><a href="http://www.twitter.com/consultorarp" class="icon-twitter" id="t-twitter"></a></li><li><a href="https://plus.google.com/u/0/b/116129234397509918956/+RPConsultoriaBuenosAires/posts" class="icon-google-plus" id="t-gplus"></a></li><li><a href="#" class="icon-linkedin" id="t-linkedin"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="mmovile">
+		<a href="#" class="icon-menu" id="menu"></a>
+		<!--Cambiar por Pagina Actual-->
+		<p>Búsquedas</p>
+	</div>
+	<div id="msocial">
+		<p>Seguinos En:</p>
+		<ul>
+			<li><a href="https://www.facebook.com/consultoriaRP" class="icon-facebook" id="m-facebook"></a></li><li><a href="http://www.twitter.com/consultorarp" class="icon-twitter" id="m-twitter"></a></li><li><a href="https://plus.google.com/u/0/b/116129234397509918956/+RPConsultoriaBuenosAires/posts" class="icon-google-plus" id="m-gplus"></a></li><li><a href="#" class="icon-linkedin" id="m-linkedin"></a></li>
+		</ul>
+	</div>
+	<!--Inicio de Contenido-->
+	<section>
+		<div class="ccontainer">
+			<h1 class="main-title">Búsquedas</h1>
+			<div class="right">
+			<button type="button" id="post-volunt">Postularme Voluntariamente</button>
+			</div>
+			<article id="postulacion-voluntaria">
+				<form action="php/post-volunt.php" method="POST" enctype="multipart/form-data" name="post-volunt">
+					<h2>Postulación Voluntaria</h2><br>
+					<div class="post-nombre">
+						<label for="first_name">Nombre</label><span>*</span><br>
+						<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+					</div>
+					<div class="post-apellido">
+						<label for="last_name">Apellido</label><span>*</span><br>
+						<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+					</div>
+					<div class="post-mail">
+						<label for="email">E-mail</label><span>*</span><br>
+						<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+					</div>
+					<div class="post-categoria">
+						<label for="email">Profesión</label><span>*</span><br>
+						<input type="text" name="categoria" placeholder="Ingrese su Profesión" required>
+					</div><br><br>
+					<div class="post-cv">
+						<label for="cv">Curriculum</label><span>*</span><br>
+						<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+						<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+					</div><br>
+					<input type="submit" name="submit" value="Postularme" class="post-enviar">
+				</form>	
+			</article><br>
+			<!--Busqueda 1-->
+			<article class="busqueda-new">
+				<div class="busqueda-title">
+					<p>Community Manager  C/ Portugués</p>
+				</div>
+				<p>Estamos en la búsqueda de un Community Manager c/Portugués, para una importante Empresa de Comunicación y marketing digital. Seleccionaremos  para su equipo comercial del Departamento de Portugués, estudiantes o...<a class="leermas" href="busquedas/comunitym.html">Leer+</a> </p>
+				<div class="busqueda-botones">
+					<div class="boton" id="sb1">
+						<a style="cursor: pointer;">Sugerir</a>
+					</div>
+					<div class="boton" id="pb1">
+						<a style="cursor: pointer;">Postularme</a>
+					</div>
+				</div>
+				<div class="busquedas-social bs1 hide">
+					<ul>
+						<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busquedas/comunitym.html" target=_blank class="icon-facebook"></a></li>
+						<li class="b-twitter"><a href="http://twitter.com/home?status=Buscamos Comunity Manager que hable en portugues http://www.rpconsultoria.com.ar/busquedas/comunitym.html" target=_blank class="icon-twitter"></a></li>
+						<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busquedas/comunitym.html" target=_blank class="icon-google-plus"></a></li>
+					</ul>
+				</div>
+				<div class="busquedas-postularme bp1 hide">
+					<form action="php/busqueda1.php" method="POST" enctype="multipart/form-data" name="busqueda1">
+						<div class="post-nombre">
+							<label for="first_name">Nombre</label><span>*</span><br>
+							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+						</div>
+						<div class="post-apellido">
+							<label for="last_name">Apellido</label><span>*</span><br>
+							<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+						</div>
+						<div class="post-mail">
+							<label for="email">E-mail</label><span>*</span><br>
+							<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+						</div>
+						<div class="post-cv">
+							<label for="cv">Curriculum</label><span>*</span><br>
+							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+						</div>
+						<input type="submit" name="submit" value="Postularme" class="post-enviar">
+					</form>				
+				</div>
+			</article>
+			<!--Busqueda 2-->
+			<article class="busqueda-new">
+				<div class="busqueda-title">
+					<p>Técnico de Campo (Salta)</p>
+				</div>
+				<p>Importante Empresa de telecomunicaciones seleccionará  Técnico electrónico o estudiante de Ingeniería, telecomunicaciones o afines. Es necesario que sea una persona con clara orientación hacia el cliente y al trabajo en equipo; con experiencia...<a class="leermas" href="busquedas/tecnicocampo.html">Leer+</a></p>
+				<div class="busqueda-botones">
+					<div class="boton" id="sb2">
+						<a style="cursor: pointer;">Sugerir</a>
+					</div>
+					<div class="boton" id="pb2">
+						<a style="cursor: pointer;">Postularme</a>
+					</div>
+				</div>
+				<div class="busquedas-social bs2 hide">
+					<ul>
+						<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busquedas/tecnicocampo.html" target=_blank class="icon-facebook"></a></li>
+						<li class="b-twitter"><a href="http://twitter.com/home?status=Buscamos Tecnico de Campo http://www.rpconsultoria.com.ar/busquedas/tecnicocampo.html" target=_blank class="icon-twitter"></a></li>
+						<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busquedas/tecnicocampo.html" target=_blank class="icon-google-plus"></a></li>
+					</ul>
+				</div>
+				<div class="busquedas-postularme bp2 hide">
+					<form action="php/busqueda2.php" method="POST" enctype="multipart/form-data" name="busqueda2">
+						<div class="post-nombre">
+							<label for="first_name">Nombre</label><span>*</span><br>
+							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+						</div>
+						<div class="post-apellido">
+							<label for="last_name">Apellido</label><span>*</span><br>
+							<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+						</div>
+						<div class="post-mail">
+							<label for="email">E-mail</label><span>*</span><br>
+							<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+						</div>
+						<div class="post-cv">
+							<label for="cv">Curriculum</label><span>*</span><br>
+							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+						</div>
+						<input type="submit" name="submit" value="Postularme" class="post-enviar">
+					</form>	
+				</div>
+			</article>
+			<!--Busqueda 3-->
+			<article class="busqueda-new">
+				<div class="busqueda-title">
+					<p>Programador.Net</p>
+				</div>
+				<p>Estamos seleccionando   un  analista de sistemas o Programador.Net. 
+					Entre sus tareas se encuentra la de: Desarrollar aplicaciones y nuevas funcionalidades; Diseñar, programar, crear  contenidos en  sistemas. Realizar el mantenimiento de aplicaciones existentes.<a class="leermas" href="busquedas/programadornet.html">Leer+</a></p>
+					<div class="busqueda-botones">
+						<div class="boton" id="sb3">
+							<a style="cursor: pointer;">Sugerir</a>
+						</div>
+						<div class="boton" id="pb3">
+							<a style="cursor: pointer;">Postularme</a>
+						</div>
+					</div>
+					<div class="busquedas-social bs3 hide">
+						<ul>
+							<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busquedas/programadornet.html" target=_blank class="icon-facebook"></a></li>
+							<li class="b-twitter"><a href="http://twitter.com/home?status=Buscamos Programador .NET http://www.rpconsultoria.com.ar/busquedas/programadornet.html" target=_blank class="icon-twitter"></a></li>
+							<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busquedas/programadornet.html" target=_blank class="icon-google-plus"></a></li>
+						</ul>
+					</div>
+					<div class="busquedas-postularme bp3 hide">
+						<form action="php/busqueda3.php" method="POST" enctype="multipart/form-data" name="busqueda3">
+							<div class="post-nombre">
+								<label for="first_name">Nombre</label><span>*</span><br>
+								<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+							</div>
+							<div class="post-apellido">
+								<label for="last_name">Apellido</label><span>*</span><br>
+								<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+							</div>
+							<div class="post-mail">
+								<label for="email">E-mail</label><span>*</span><br>
+								<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+							</div>
+							<div class="post-cv">
+								<label for="cv">Curriculum</label><span>*</span><br>
+								<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+								<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+							</div>
+							<input type="submit" name="submit" value="Postularme" class="post-enviar">
+						</form>	
+					</div>
+				</article>
+				<!-- IMPAR -->
+				<article class="busqueda-new impar">
+					<div class="busqueda-title">
+						<p>Empleado Administrativo</p>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eius, cumque quasi voluptas iure illo rem ab unde possimus voluptatibus nobis architecto perspiciatis. Enim, quae mollitia numquam delectus alias recusandae.</p>
+					<div class="busqueda-botones">
+						<div class="boton" id="sb1">
+							<a style="cursor: pointer;">Sugerir</a>
+						</div>
+						<div class="boton" id="pb1">
+							<a style="cursor: pointer;">Postularme</a>
+						</div>
+					</div>
+				</article>
+				<p id="lastup">Última Actualización: 25/07/2014</p>
+			</div>
+
+
+		</div>
+	</section>
+	<!--Final de Contenido-->
+	<footer>
+		<p>Av.Caseros 2478</p>
+		<p>Lunes a Viernes de 9:00 a 18:00</p>
+		<p><span style="color:#aaa">(+54) 11</span> 4943-5302</p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="javascript/prefixfree.js"></script>
+	<script src="javascript/menu.js"></script>
+	<script src="javascript/busquedas.js"></script>
+</body>
+</html>
