@@ -1,1 +1,29 @@
 AddDefaultCharset UTF-8
+
+RewriteEngine on
+
+#Principales
+RewriteRule ^inicio?$ index.html
+RewriteRule ^asesoramiento?$ asesoramiento.html
+RewriteRule ^busquedas?$ busquedas.html
+RewriteRule ^noticias?$ noticias.html
+RewriteRule ^contacto?$ contacto.html
+
+#Busquedas
+RewriteRule ^informacion/community-manager?$ sections/busquedas/comunitym.html
+RewriteRule ^informacion/programador-net?$ sections/busquedas/programadornet.html
+RewriteRule ^informacion/tecnico-de-campo?$ sections/busquedas/tecnicocampo.html
+
+#Noticias
+RewriteRule ^informacion/recursos-de-la-seguridad-social?$ sections/noticias/recursos-de-la-seguridad-social.html
+RewriteRule ^informacion/resolucion-general-3653?$ sections/noticias/resolucion-afip-3653.html
+
+#Asesoramiento
+RewriteRule ^informacion/recursos-humanos?$ sections/asesoramiento/recursos-humanos.html
+
+#Alertas
+RewriteRule ^success?$ sections/alerts/success.html
+RewriteRule ^success-busquedas?$ sections/alerts/success-busquedas.html
+RewriteRule ^fail?$ sections/alerts/fail.html
+
+

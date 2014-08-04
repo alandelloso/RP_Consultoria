@@ -19,10 +19,10 @@ $mail->Body = $contenido;
 $mail->AddAttachment($adjunto['tmp_name'], $adjunto['name']);
 
 if ($nombre == "" or $apellido == "" or $email == "" or $adjunto['name'] == "") {
-	header('Location:../fail.html');
+	header('Location: ../fail');
 } elseif ($mail->Send()) {
-	header('Location:../success-busquedas.html'); 
+	header('Location: ../success-busquedas'); 
 } else {
-	header('Location:../fail.html');
+	header('Location: ../fail');
 }
 ?>

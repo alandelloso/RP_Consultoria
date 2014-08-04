@@ -1,6 +1,6 @@
 <?php
 $destino = "adelloso@rpconsultoria.com.ar";
-$asunto = "Consulta: Recursos de la Seguridad Social";
+$asunto = "Consulta: Asesoramiento";
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $email = $_POST['mail'];
