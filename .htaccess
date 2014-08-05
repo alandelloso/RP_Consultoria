@@ -11,8 +11,9 @@ RewriteRule ^contacto?$ contacto.html
 
 #Busquedas
 RewriteRule ^informacion/community-manager?$ sections/busquedas/comunitym.html
-RewriteRule ^informacion/programador-net?$ sections/busquedas/programadornet.html
+RewriteRule ^informacion/analista-programador-net?$ sections/busquedas/analprogramadornet.html
 RewriteRule ^informacion/tecnico-de-campo?$ sections/busquedas/tecnicocampo.html
+RewriteRule ^informacion/office-manager?$ sections/busquedas/officemanager.html
 
 #Noticias
 RewriteRule ^informacion/recursos-de-la-seguridad-social?$ sections/noticias/recursos-de-la-seguridad-social.html

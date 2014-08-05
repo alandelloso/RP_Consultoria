@@ -1,6 +1,6 @@
 <?php
 $destino = "rrhh@rpconsultoria.com.ar";
-$asunto = "Analista Programador .NET";
+$asunto = "Office Manager";
 $nombre = $_POST['first_name'];
 $apellido = $_POST['last_name'];
 $email = $_POST['mail'];
