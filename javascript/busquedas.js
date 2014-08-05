@@ -9,6 +9,8 @@ function app() {
 	$('#pb3').on('click', openP3);
 	$('#sb4').on('click', openB4);
 	$('#pb4').on('click', openP4);
+	$('#sb5').on('click', openB5);
+	$('#pb5').on('click', openP5);
 	$('#post-volunt').on('click', openPost);
 }
 
@@ -101,6 +103,29 @@ function openP4() {
 	} else if ($('.bs4').hasClass('show') && $('.bp4').hasClass('hide')) {
 		$('.bs4').slideUp().removeClass('show').addClass('hide');
 		$('.bp4').delay(500).slideDown().removeClass('hide').addClass('show');
+	}
+}
+
+//Busqueda 5
+function openB5() {
+	if ($('.bp5').hasClass('hide') && $('.bs5').hasClass('hide')) {
+		$('.bs5').slideDown().removeClass('hide').addClass('show');
+	} else if ($('.bp5').hasClass('hide') && $('.bs5').hasClass('show')) {
+		$('.bs5').slideUp().removeClass('show').addClass('hide');
+	} else if ($('.bp5').hasClass('show') && $('.bs5').hasClass('hide')) {
+		$('.bp5').slideUp().removeClass('show').addClass('hide');
+		$('.bs5').delay(500).slideDown().removeClass('hide').addClass('show');
+	}
+}
+
+function openP5() {
+	if ($('.bs5').hasClass('hide') && $('.bp5').hasClass('hide')) {
+		$('.bp5').slideDown().removeClass('hide').addClass('show');
+	} else if ($('.bs5').hasClass('hide') && $('.bp5').hasClass('show')) {
+		$('.bp5').slideUp().removeClass('show').addClass('hide');
+	} else if ($('.bs5').hasClass('show') && $('.bp5').hasClass('hide')) {
+		$('.bs5').slideUp().removeClass('show').addClass('hide');
+		$('.bp5').delay(500).slideDown().removeClass('hide').addClass('show');
 	}
 }
 
