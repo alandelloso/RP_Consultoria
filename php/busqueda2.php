@@ -11,12 +11,13 @@ Mail: $email";
 require "phpmailer/class.phpmailer.php";
 
 $mail = new PHPMailer;
-$mail->From = "busquedas@rpconsultoria.com.ar";
+$mail->From = $email;
 $mail->FromName = "RP Website";
 $mail->Subject = $asunto;
 $mail->addAddress ($destino, 'RP Consultoria');
 $mail->Body = $contenido;
 $mail->AddAttachment($adjunto['tmp_name'], $adjunto['name']);
+$mail->CharSet = 'UTF-8';
 
 if ($nombre == "" or $apellido == "" or $email == "" or $adjunto['name'] == "") {
 	header('Location: ../fail');

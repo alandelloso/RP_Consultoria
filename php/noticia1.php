@@ -17,6 +17,7 @@ $mail->FromName = "RP Website";
 $mail->Subject = $asunto;
 $mail->addAddress ($destino, 'RP Consultoria');
 $mail->Body = $contenido;
+$mail->CharSet = 'UTF-8';
 
 if ($nombre == "" or $apellido == "" or $email == "" or $mensaje == "") {
 	header('Location: ../fail');
