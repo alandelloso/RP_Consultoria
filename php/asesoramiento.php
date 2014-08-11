@@ -4,7 +4,6 @@ $asunto = "Consulta: Asesoramiento";
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $email = $_POST['mail'];
-$cname = $nombre." ".$apellido;
 $mensaje = $_POST['comment'];
 $contenido = "Nombre: $nombre $apellido
 Mail: $email
@@ -15,7 +14,7 @@ require "phpmailer/class.phpmailer.php";
 
 $mail = new PHPMailer;
 $mail->From = $email;
-$mail->FromName = $cname;
+$mail->FromName = 'RP Website';
 $mail->Subject = $asunto;
 $mail->addAddress ($destino, 'RP Consultoria');
 $mail->Body = $contenido;

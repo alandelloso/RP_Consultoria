@@ -4,8 +4,10 @@ $asunto = "Office Manager";
 $nombre = $_POST['first_name'];
 $apellido = $_POST['last_name'];
 $email = $_POST['mail'];
+$remuneracion = $_POST['remuneracion'];
 $adjunto = $_FILES['cv'];
 $contenido = "Nombre: $nombre $apellido
+Remuneracion Pretendida: $ $remuneracion
 Mail: $email";
 
 require "phpmailer/class.phpmailer.php";
