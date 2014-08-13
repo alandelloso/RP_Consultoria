@@ -3,6 +3,7 @@ $(document).on('ready', noticias);
 function noticias() {
 	$('#nb1').on('click', socialOpen1);
 	$('#nb2').on('click', socialOpen2);
+	$('#nb3').on('click', socialOpen3);
 }
 
 function socialOpen1() {
@@ -11,4 +12,8 @@ function socialOpen1() {
 
 function socialOpen2() {
 	$('#ns2').slideToggle();
+}
+
+function socialOpen3() {
+	$('#ns3').slideToggle();
 }

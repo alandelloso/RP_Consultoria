@@ -18,6 +18,7 @@ RewriteRule ^informacion/asistente-de-facturacion?$ sections/busquedas/asistfact
 #Noticias
 RewriteRule ^informacion/recursos-de-la-seguridad-social?$ sections/noticias/recursos-de-la-seguridad-social.html
 RewriteRule ^informacion/resolucion-general-3653?$ sections/noticias/resolucion-afip-3653.html
+RewriteRule ^informacion/pasante-en-situacion-de-embarazo?$ sections/noticias/pasante-en-situacion-de-embarazo.html
 
 #Asesoramiento
 RewriteRule ^informacion/recursos-humanos?$ sections/asesoramiento/recursos-humanos.html
