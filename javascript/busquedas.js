@@ -5,12 +5,12 @@ function app() {
 	$('#pb1').on('click', openP1);
 	$('#sb2').on('click', openB2);
 	$('#pb2').on('click', openP2);
-	// $('#sb3').on('click', openB3);
-	// $('#pb3').on('click', openP3);
 	$('#sb4').on('click', openB4);
 	$('#pb4').on('click', openP4);
 	$('#sb5').on('click', openB5);
 	$('#pb5').on('click', openP5);
+	$('#sb6').on('click', openB6);
+	$('#pb6').on('click', openP6);
 	$('#post-volunt').on('click', openPost);
 }
 
@@ -60,28 +60,6 @@ function openP2() {
 	}
 }
 
-//Busqueda 3
-// function openB3() {
-// 	if ($('.bp3').hasClass('hide') && $('.bs3').hasClass('hide')) {
-// 		$('.bs3').slideDown().removeClass('hide').addClass('show');
-// 	} else if ($('.bp3').hasClass('hide') && $('.bs3').hasClass('show')) {
-// 		$('.bs3').slideUp().removeClass('show').addClass('hide');
-// 	} else if ($('.bp3').hasClass('show') && $('.bs3').hasClass('hide')) {
-// 		$('.bp3').slideUp().removeClass('show').addClass('hide');
-// 		$('.bs3').delay(500).slideDown().removeClass('hide').addClass('show');
-// 	}
-// }
-
-// function openP3() {
-// 	if ($('.bs3').hasClass('hide') && $('.bp3').hasClass('hide')) {
-// 		$('.bp3').slideDown().removeClass('hide').addClass('show');
-// 	} else if ($('.bs3').hasClass('hide') && $('.bp3').hasClass('show')) {
-// 		$('.bp3').slideUp().removeClass('show').addClass('hide');
-// 	} else if ($('.bs3').hasClass('show') && $('.bp3').hasClass('hide')) {
-// 		$('.bs3').slideUp().removeClass('show').addClass('hide');
-// 		$('.bp3').delay(500).slideDown().removeClass('hide').addClass('show');
-// 	}
-// }
 
 //Busqueda 4
 function openB4() {
@@ -126,6 +104,29 @@ function openP5() {
 	} else if ($('.bs5').hasClass('show') && $('.bp5').hasClass('hide')) {
 		$('.bs5').slideUp().removeClass('show').addClass('hide');
 		$('.bp5').delay(500).slideDown().removeClass('hide').addClass('show');
+	}
+}
+
+//Busqueda 6
+function openB6() {
+	if ($('.bp6').hasClass('hide') && $('.bs6').hasClass('hide')) {
+		$('.bs6').slideDown().removeClass('hide').addClass('show');
+	} else if ($('.bp6').hasClass('hide') && $('.bs6').hasClass('show')) {
+		$('.bs6').slideUp().removeClass('show').addClass('hide');
+	} else if ($('.bp6').hasClass('show') && $('.bs6').hasClass('hide')) {
+		$('.bp6').slideUp().removeClass('show').addClass('hide');
+		$('.bs6').delay(500).slideDown().removeClass('hide').addClass('show');
+	}
+}
+
+function openP6() {
+	if ($('.bs6').hasClass('hide') && $('.bp6').hasClass('hide')) {
+		$('.bp6').slideDown().removeClass('hide').addClass('show');
+	} else if ($('.bs6').hasClass('hide') && $('.bp6').hasClass('show')) {
+		$('.bp6').slideUp().removeClass('show').addClass('hide');
+	} else if ($('.bs6').hasClass('show') && $('.bp6').hasClass('hide')) {
+		$('.bs6').slideUp().removeClass('show').addClass('hide');
+		$('.bp6').delay(500).slideDown().removeClass('hide').addClass('show');
 	}
 }
 

@@ -72,7 +72,7 @@
 	<section>
 		<div class="ccontainer">
 			<h1 class="main-title">Búsquedas</h1>
-			<p id="lastup">Última Actualización: 06/08/2014</p>		
+			<p id="lastup">Última Actualización: 14/08/2014</p>		
 			<div class="right">
 				<button type="button" id="post-volunt">¡Quiero Integrar Su Base de Datos!</button>
 			</div>
@@ -103,6 +103,55 @@
 					<input type="submit" name="submit" value="Postularme" class="post-enviar">
 				</form>	
 			</article><br>
+			<!--Busqueda 6-->
+				<article class="busqueda-new">
+					<div class="busqueda-title">
+						<p>Asistente Contable</p>
+					</div>
+					<p>Nos encontramos en la búsqueda de un Asistente Contable, para incorporarse al departamento de administración y finanzas de uno de nuestros principales clientes. Pensamos en una persona con buenas relaciones interpersonales, flexible, con sentido común...<a class="leermas" href="informacion/asistente-contable">Leer+</a></p>
+					<div class="busqueda-botones">
+						<div class="boton" id="sb6">
+							<a style="cursor: pointer;">Sugerir</a>
+						</div>
+						<div class="boton" id="pb6">
+							<a style="cursor: pointer;">Postularme</a>
+						</div>
+					</div>
+					<div class="busquedas-social bs6 hide">
+						<ul>
+							<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/informacion/asistente-contable" target=_blank class="icon-facebook"></a></li>
+							<li class="b-twitter"><a href="http://twitter.com/home?status=Buscamos Tecnico de Campo http://www.rpconsultoria.com.ar/informacion/asistente-contable" target=_blank class="icon-twitter"></a></li>
+							<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/informacion/asistente-contable" target=_blank class="icon-google-plus"></a></li>
+						</ul>
+					</div>
+					<div class="busquedas-postularme bp6 hide">
+						<form action="php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda6">
+							<div class="post-nombre">
+							<label for="first_name">Nombre</label><span>*</span><br>
+							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+						</div>
+						<div class="post-apellido">
+							<label for="last_name">Apellido</label><span>*</span><br>
+							<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+						</div>
+						<div class="post-mail">
+							<label for="email">E-mail</label><span>*</span><br>
+							<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+						</div>
+						<div class="post-remuneracion">
+							<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
+							<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
+						</div><br>
+						<div class="post-cv">
+							<label for="cv">Curriculum</label><span>*</span><br>
+							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+						</div>
+						<input type="hidden" name="title" value="Técnico de Campo">
+						<input type="submit" name="submit" value="Postularme" class="post-enviar">
+						</form>	
+					</div>
+				</article>
 			<!--Busqueda 5-->
 			<article class="busqueda-new">
 				<div class="busqueda-title">
@@ -125,7 +174,7 @@
 					</ul>
 				</div>
 				<div class="busquedas-postularme bp5 hide">
-					<form action="php/busqueda5.php" method="POST" enctype="multipart/form-data" name="busqueda5">
+					<form action="php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda5">
 						<div class="post-nombre">
 							<label for="first_name">Nombre</label><span>*</span><br>
 							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
@@ -147,6 +196,7 @@
 							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
 							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
 						</div>
+						<input type="hidden" name="title" value="Asistente de Facturación">
 						<input type="submit" name="submit" value="Postularme" class="post-enviar">
 					</form>	
 				</div>
@@ -173,7 +223,7 @@
 					</ul>
 				</div>
 				<div class="busquedas-postularme bp4 hide">
-					<form action="php/busqueda4.php" method="POST" enctype="multipart/form-data" name="busqueda4">
+					<form action="php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda4">
 						<div class="post-nombre">
 							<label for="first_name">Nombre</label><span>*</span><br>
 							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
@@ -195,6 +245,7 @@
 							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
 							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
 						</div>
+						<input type="hidden" name="title" value="Office Manager">
 						<input type="submit" name="submit" value="Postularme" class="post-enviar">
 					</form>	
 				</div>
@@ -222,7 +273,7 @@
 						</ul>
 					</div>
 					<div class="busquedas-postularme bp1 hide">
-						<form action="php/busqueda1.php" method="POST" enctype="multipart/form-data" name="busqueda1">
+						<form action="php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda1">
 							<div class="post-nombre">
 							<label for="first_name">Nombre</label><span>*</span><br>
 							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
@@ -244,6 +295,7 @@
 							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
 							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
 						</div>
+						<input type="hidden" name="title" value="Community Manager">
 						<input type="submit" name="submit" value="Postularme" class="post-enviar">
 						</form>				
 					</div>
@@ -270,7 +322,7 @@
 						</ul>
 					</div>
 					<div class="busquedas-postularme bp2 hide">
-						<form action="php/busqueda2.php" method="POST" enctype="multipart/form-data" name="busqueda2">
+						<form action="php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda2">
 							<div class="post-nombre">
 							<label for="first_name">Nombre</label><span>*</span><br>
 							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
@@ -292,12 +344,13 @@
 							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
 							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
 						</div>
+						<input type="hidden" name="title" value="Técnico de Campo">
 						<input type="submit" name="submit" value="Postularme" class="post-enviar">
 						</form>	
 					</div>
 				</article>
 				<!-- IMPAR -->
-				<article class="busqueda-new impar" style="display: none;">
+				<article class="busqueda-new impar">
 					<div class="busqueda-title">
 						<p>Empleado Administrativo</p>
 					</div>

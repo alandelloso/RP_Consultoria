@@ -134,7 +134,7 @@
 				</table><br>
 				<a href="../downloads/resolucion-general-3653.pdf" download="Resolucion General 3653" class="pdf-download"><span class="icon-pdf"> </span>Descargar PDF</a><br><br>
 			</div>
-			<form action="../php/noticia2.php" class="consulta" method="POST">
+			<form action="../php/consulta.php" class="consulta" method="POST">
 				<h2>Consultanos</h2><br>
 				<label for="nombre">Nombre<span class="required">*</span></label><br>
 				<input type="text" name="nombre" required><br><br>
@@ -144,6 +144,7 @@
 				<input type="email" name="mail" required><br><br>
 				<label for="comment">Consulta<span class="required">*</span></label><br>
 				<textarea name="comment" cols="30" rows="5" required></textarea><br><br>
+				<input type="hidden" name="title" value="Consulta: Resolución AFIP 3653">
 				<input type="submit">
 			</form>
 		</article>

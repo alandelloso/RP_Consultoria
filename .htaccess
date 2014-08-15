@@ -14,6 +14,7 @@ RewriteRule ^informacion/community-manager?$ sections/busquedas/comunitym.html
 RewriteRule ^informacion/tecnico-de-campo?$ sections/busquedas/tecnicocampo.html
 RewriteRule ^informacion/office-manager?$ sections/busquedas/officemanager.html
 RewriteRule ^informacion/asistente-de-facturacion?$ sections/busquedas/asistfacturacion.html
+RewriteRule ^informacion/asistente-contable?$ sections/busquedas/asistcontable.html
 
 #Noticias
 RewriteRule ^informacion/recursos-de-la-seguridad-social?$ sections/noticias/recursos-de-la-seguridad-social.html

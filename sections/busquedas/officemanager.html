@@ -90,7 +90,7 @@
 		<img class="busqueda-activa" src="../img/busqueda-activa.png" alt="Busqueda Activa">
 		<hr>
 		<div class="center-me">
-			<form action="../php/busqueda4.php" method="POST" enctype="multipart/form-data" name="busqueda4">
+			<form action="../php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda4">
 				<h2>Postularme</h2>
 				<div class="post-nombre">
 					<label for="first_name">Nombre</label><span>*</span><br>
@@ -113,6 +113,7 @@
 					<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
 					<input type="hidden" name="MAX_FILE_SIZE" value="20000">
 				</div><br>
+				<input type="hidden" name="title" value="Office Manager">
 				<input type="submit" name="submit" value="Postularme" class="post-enviar">
 			</form><br>	
 		</div>

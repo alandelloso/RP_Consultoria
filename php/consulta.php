@@ -1,14 +1,13 @@
 <?php
 $destino = "adelloso@rpconsultoria.com.ar";
-$asunto = "Consulta: Asesoramiento";
+$asunto = $_POST['title'];
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $email = $_POST['mail'];
 $mensaje = $_POST['comment'];
 $contenido = "Nombre: $nombre $apellido
 Mail: $email
-Mensaje: $mensaje
-(**Enviado desde RP Consultoría**)";
+Mensaje: $mensaje";
 
 require "phpmailer/class.phpmailer.php";
 

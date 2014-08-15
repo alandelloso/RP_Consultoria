@@ -1,6 +1,6 @@
 <?php
 $destino = "rrhh@rpconsultoria.com.ar";
-$asunto = "Comunity Manager C/ Portugues";
+$asunto = $_POST['title'];
 $nombre = $_POST['first_name'];
 $apellido = $_POST['last_name'];
 $email = $_POST['mail'];

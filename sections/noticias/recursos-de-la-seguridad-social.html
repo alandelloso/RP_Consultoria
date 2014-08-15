@@ -99,7 +99,7 @@
 			<p>Dichos archivos, conjuntamente con los respectivos cupones impresos, constituirán prueba suficiente del incumplimiento constatado a efectos de la prosecución del trámite pertinente, sin perjuicio del derecho del empleador fiscalizado a impugnar la determinación de la deuda, una vez notificado de la misma y conforme la normativa vigente.</p><br>
 			<a href="../downloads/recursos-de-la-seguridad-social.pdf" download="Recursos de la Seguridad Social" class="pdf-download"><span class="icon-pdf"> </span>Descargar PDF</a><br><br>
 		</div>
-		<form action="../php/noticia1.php" class="consulta" method="POST">
+		<form action="../php/consulta.php" class="consulta" method="POST">
 			<h2>Consultanos</h2><br>
 			<label for="nombre">Nombre<span class="required">*</span></label><br>
 			<input type="text" name="nombre" required><br><br>
@@ -109,6 +109,7 @@
 			<input type="email" name="mail" required><br><br>
 			<label for="comment">Consulta<span class="required">*</span></label><br>
 			<textarea name="comment" cols="30" rows="5" required></textarea><br><br>
+			<input type="hidden" name="title" value="Consulta: Recursos de la Seguridad Social">
 			<input type="submit">
 		</form>
 	</article>
