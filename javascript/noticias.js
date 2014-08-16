@@ -1,19 +1,10 @@
 $(document).on('ready', noticias);
 
 function noticias() {
-	$('#nb1').on('click', socialOpen1);
-	$('#nb2').on('click', socialOpen2);
-	$('#nb3').on('click', socialOpen3);
+	$('.nb').on('click', openSocial);
 }
 
-function socialOpen1() {
-	$('#ns1').slideToggle();
-}
-
-function socialOpen2() {
-	$('#ns2').slideToggle();
-}
-
-function socialOpen3() {
-	$('#ns3').slideToggle();
+//Funciones Externas
+function openSocial() {
+	$(this).next('.ns').slideToggle('600');
 }
