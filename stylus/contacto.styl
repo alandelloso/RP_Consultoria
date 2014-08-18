@@ -29,15 +29,36 @@ section
 		height 300px
 
 #tarjeta-contacto
-	background rgba(0,0,0,0.5)
+	background rgb(210,210,210)
 	border-radius 10px
-	color textob
-	// max-width 400px
+	border solid 3px color3
+	color textow
 	padding 0.3em
 	div
 		text-align left
 	a 
-		color color1
+		color color3
+
+#transportes
+	max-width 580px
+	padding-top 1em
+	.transporte-title
+		text-align left
+		background rgb(220,220,220)
+		padding-left 1em
+		border-radius 5px 5px 0 0 
+		h2
+			text-shadow color4 1px 1px 0
+			display inline-block
+			margin 0
+	#subtes, #colectivos
+		border solid 3px color3
+		border-radius 8px
+	.transporte-medios
+		border-radius 0 0 5px 5px
+		background rgb(210,210,210)
+		p 
+			display inline-block
 
 @media (min-width: 625px)
 	#datos-contacto
@@ -49,8 +70,11 @@ section
 
 	#tarjeta-contacto
 		max-width 580px
-		box-shadow textow .5em .5em
 		display inline-block
+
+	#transportes
+		display inline-block
+		width 580px
 
 	.ccontainer
 		max-width 1270px
@@ -58,3 +82,10 @@ section
 		margin 0 auto
 		overflow hidden
 
+@media (min-width: 1165px)
+
+	#transportes
+		width 450px
+		vertical-align top
+		padding-left 1em
+		padding-top 0

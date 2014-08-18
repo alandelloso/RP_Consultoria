@@ -70,12 +70,14 @@ select
 .center
 	text-align center
 
+.impar
+	display none
+
 .noticia-new
-	background rgb(140,140,140)
+	background #d6d6d6
 	border solid 2px rgb(50,50,50)
 	border-radius 10px
-	box-shadow rgba(0,0,0,0.7) 5px 5px 0px
-	color textob
+	color textow
 	margin .5em
 	max-width 545px
 	text-align left
@@ -86,13 +88,12 @@ select
 		font-style italic
 		margin .3em .2em .5em .2em
 		.fecha
-			color color1
-			text-shadow 1px 1px rgba(0,0,0,0.2)
+			color color4
 			font-weight bold
 	.noticia-botonholder
 		text-align right
 		.boton 
-			background color1
+			background color2
 			border solid 2px color4
 			border-radius 10px
 			cursor pointer
@@ -105,19 +106,22 @@ select
 			transition all .5s ease-in
 			width 120px
 			a 
-				color black
+				color textob
 				display block 
 				padding .30em
 				text-decoration none
 			&:hover.boton
-				background color2
+				background color3
 	.noticia-leer
-		color color1
+		color color4
+		font-size 1.1em
 		display inline
 		font-weight bold
-		text-shadow 1px 1px rgba(0,0,0,0.4)
 		padding-left .5em
 		text-decoration none
+		transition all .5s ease-in
+		&:hover
+			color color3
 	.noticia-tag
 		background color2
 		border-top solid 2px color1
@@ -126,19 +130,22 @@ select
 		border-radius 0 5px 5px 0
 		box-shadow color4 4px 4px 0
 		margin-top 1em
+		color textob
 		font-style italic
 		padding 2.5px 0
 		padding-left .5em
 		text-align right
 		width 100px
 	.noticia-title
-		background rgba(70,70,70,0.3)
+		background color3
 		border-radius 8px 8px 0 0 
 		font-size 16pt
+		color textob
 		padding-left .2em
 		text-align left
 		p
 			margin 0
+			text-align left
 
 .noticia-social
 	background rgba(0,0,0,0.5)
@@ -171,6 +178,7 @@ select
 		overflow hidden
 
 
+
 @media (min-width: 600px)
 	section
 		text-align center
@@ -179,6 +187,9 @@ select
 
 	.noticia-new 
 		display inline-block
+
+	.impar
+		display none
 
 
 @media (min-width: 1200px)
@@ -192,6 +203,9 @@ select
 		padding 0 10px
 		margin 0 auto
 		overflow hidden
+
+	.impar
+		visibility hidden
 
 	.noticia-new
 		display inline-block

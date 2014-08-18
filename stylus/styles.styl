@@ -54,6 +54,12 @@ a
 		height 50px
 		&:hover
 			background color2
+	.post-file
+		background rgba(0,0,0,0.5)
+		border solid 2px color2
+		border-radius 10px
+		margin-top .5em
+		padding .5em
 
 
 
@@ -68,25 +74,28 @@ a
 
 .leermas
 	display inline-block
+	color color4
+	font-size 1.1em
+	padding-left .2em
 
 #valores
 	padding  0 1em
 
 .busqueda-new
-	background rgba(0,0,0,0.5)
-	border solid 2px #000
-	border-radius  10px 
-	color textob
+	background #d6d6d6
+	border solid 2px rgb(50,50,50)
+	border-radius 13px 
+	color textow
 	margin .5em
 	max-width 545px
 	p
+		display inline-block
 		margin .2em
 		text-align left
-		display inline-block
 	.busqueda-botones
 		text-align center
 		.boton 
-			background color1
+			background color2
 			border solid 2px color4
 			border-radius 10px
 			display inline-block
@@ -97,15 +106,16 @@ a
 			transition all .5s ease-in
 			width 120px
 			a 
-				color black
+				color textob
 				display block 
 				padding .30em
 				text-decoration none
 			&:hover.boton
-				background color2
+				background color3
 	.busqueda-title
-		background rgba(0,0,0,0.3)
+		background color3
 		border-radius  10px 10px 0 0
+		color textob
 		font-size 16pt
 		padding-left .2em
 		text-align left
@@ -115,6 +125,7 @@ a
 .busquedas-postularme
 	background rgba(0,0,0,0.5)
 	border-radius 0 0 10px 10px
+	color textob
 	display none
 	text-align center
 	span
@@ -124,8 +135,8 @@ a
 	.post-cv
 		margin-bottom 1em
 	.post-enviar
-		background color2
-		border none
+		background color1
+		border solid 2px color2
 		border-radius 10px
 		height 30px
 		margin-bottom .5em
@@ -134,8 +145,11 @@ a
 		&:hover
 			background color3
 	.post-file
+		background rgba(0,0,0,0.5)
 		border solid 2px color2
 		border-radius 10px
+		margin-top .5em
+		padding .5em
 		width 250px
 
 .busquedas-social
@@ -161,14 +175,14 @@ a
 .b-facebook 
 	background facebook
 	border solid 3px #0D2E70
-	border-radius 10px
+	border-radius 100%
 	margin 0
 	transition all .5s ease-in
 	a 
 		color white
 		cursor pointer
 		display block
-		padding .5em
+		padding .7em
 		text-decoration none
 	&:hover
 		background #4F79B7
@@ -176,42 +190,27 @@ a
 .b-gplus
 	background gplus
 	border solid 3px #961212
-	border-radius 10px
-	transition all .5s ease-in
+	border-radius 100%
+	transition all .7s ease-in
 	a 
 		color white
 		cursor pointer
 		display block
-		padding .5em
+		padding .7em
 		text-decoration none
 	&:hover
 		background #EF392B
 
-.b-mail 
-	background #FCBD30
-	border solid 3px #AD7E21
-	border-radius 10px
-	margin 0
-	transition all .5s ease-in
-	a 
-		color white
-		cursor pointer
-		display block
-		padding .5em .47em
-		text-decoration none
-	&:hover
-		background #EAA00A
-
 .b-twitter 
 	background twitter
 	border solid 3px #0D7F99
-	border-radius 10px
+	border-radius 100%
 	transition all .5s ease-in
 	a 
 		color white
 		cursor pointer
 		display block
-		padding .5em
+		padding .7em
 		text-decoration none
 	&:hover
 		background #2DCEF9
