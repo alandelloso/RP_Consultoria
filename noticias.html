@@ -76,16 +76,40 @@
 		<div class="ccontainer">
 			<h1 class="main-title">Noticias</h1>
 			<!--Inicio de Filtro de Noticias-->
-<!-- 			<select name="filtro" id="filtro">
+			<select name="filtro" id="filtro">
 				<option selected value="0">Todas</option>
-				<option value="1">Impositivas</option>
-				<option value="2">Contabilidad</option>
-				<option value="3">RR.HH.</option>
-			</select> -->
+				<option value="1">Laboral</option>
+				<option value="2">Eventos</option>
+<!-- 				<option value="3">RR.HH.</option> -->
+			</select>
+			<br>
 			<!--Fin de Filtro de Noticias-->
 			<div class="center">
+			<!-- Inicio Noticia 4 -->
+				<article class="noticia-new eventos" id="noticia4">
+					<div class="noticia-title">
+						<p>Práctica en Liquidación de Haberes</p>
+					</div>
+					<p class="fecha-container">Publicado: <span class="fecha">20/08/2014</span></p>
+					<p>El Consejo Profesional de Ciencias Económicas realizará una charla sobre liquidación de haberes la cual estará a cargo de la Dra. C.P. Rosana Gloria Pavesa y el Dr. C.P. Maximiliano O. Rusconi. Los temas a tratar serán...<a href="informacion/liquidacion-de-haberes" class="noticia-leer">Leer +</a></p>
+					<div class="noticia-tag">
+						<p>Eventos</p>
+					</div>
+					<div class="noticia-botonholder">
+						<div class="boton nb"><a>Compartir</a></div>
+						<div class="noticia-social ns">
+							<ul>
+								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/informacion/liquidacion-de-haberes" target=_blank class="icon-facebook"></a></li>
+								<li class="b-twitter"><a href="http://twitter.com/home?status= Recursos de la seguridad social http://www.rpconsultoria.com.ar/informacion/liquidacion-de-haberes" target=_blank class="icon-twitter"></a></li>
+								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/informacion/liquidacion-de-haberes" target=_blank class="icon-google-plus"></a></li>
+							</ul>
+						</div>
+					</div>
+
+				</article>
+				<!--Fin Noticia 4-->
 				<!-- Inicio Noticia 3 -->
-				<article class="noticia-new" id="noticia3">
+				<article class="noticia-new laboral" id="noticia3">
 					<div class="noticia-title">
 						<p>Pasante en Situación de Embarazo</p>
 					</div>
@@ -104,11 +128,10 @@
 							</ul>
 						</div>
 					</div>
-
 				</article>
 				<!--Fin Noticia 3-->
 				<!-- Inicio Noticia 2 -->
-				<article class="noticia-new" id="noticia2">
+				<article class="noticia-new laboral" id="noticia2">
 					<div class="noticia-title">
 						<p>Resolución General 3653</p>
 					</div>
@@ -131,7 +154,7 @@
 				</article>
 				<!--Fin Noticia 2-->
 				<!--Inicio Noticia 1-->
-				<article class="noticia-new" id="noticia1">
+				<article class="noticia-new laboral" id="noticia1">
 					<div class="noticia-title">
 						<p>Recursos de la Seguridad Social</p>
 					</div>
@@ -154,7 +177,7 @@
 				</article>
 				<!--Fin Noticia 1-->
 				<!-- IMPAR -->
-				<article class="noticia-new impar" >
+				<article class="noticia-new impar" style="display:none;">
 					<div class="noticia-title">
 						<p>Insert Title Here</p>
 					</div>
@@ -177,6 +200,7 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="javascript/prefixfree.js"></script>
 	<script src="javascript/menu.js"></script>
+	<script src="ajax/noticias.ajax"></script>
 	<script src="javascript/noticias.js"></script>
 </body>
 </html>

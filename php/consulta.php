@@ -9,7 +9,7 @@ $contenido = "Nombre: $nombre $apellido
 Mail: $email
 Mensaje: $mensaje";
 
-require "phpmailer/class.phpmailer.php";
+require "../libs/phpmailer/class.phpmailer.php";
 
 $mail = new PHPMailer;
 $mail->From = $email;

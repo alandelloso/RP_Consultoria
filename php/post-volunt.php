@@ -10,7 +10,7 @@ $contenido = "Profesión: $categoria
 Nombre: $nombre $apellido
 Mail: $email";
 
-require "phpmailer/class.phpmailer.php";
+require "../libs/phpmailer/class.phpmailer.php";
 
 $mail = new PHPMailer;
 $mail->From = $email;
