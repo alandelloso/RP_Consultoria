@@ -22,7 +22,7 @@ function filt() {
 	
 	if (indice == 1) {
 		if (laboral % 2 == 1) {
-		$('.impar').css({"visibility": "hidden", "display": "inline-block"});
+		$('.impar').css({"visibility": "hidden", "display": "inline-block",  "max-height": "10px"});
 		$('.laboral').fadeIn('slow');
 		$('.eventos').fadeOut('fast');
 		} else {
@@ -32,7 +32,7 @@ function filt() {
 		}
 	} else if (indice == 2) {
 		if (eventos % 2 == 1) {
-		$('.impar').css({"visibility": "hidden", "display": "inline-block"});
+		$('.impar').css({"visibility": "hidden", "display": "inline-block",  "max-height": "10px"});
 		$('.eventos').fadeIn('slow');
 		$('.laboral').fadeOut('fast');
 		} else {
@@ -42,7 +42,7 @@ function filt() {
 		}
 	} else if (indice == 0) {
 		if (total % 2 == 1) {
-		$('.impar').css({"visibility": "hidden", "display": "inline-block"});
+		$('.impar').css({"visibility": "hidden", "display": "inline-block",  "max-height": "10px"});
 		$('.eventos').fadeIn();
 		$('.laboral').fadeIn();
 	} else  {

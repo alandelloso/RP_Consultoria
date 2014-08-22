@@ -4,7 +4,7 @@ var nnew = $('.noticia-new').size();
 var total = nnew-1;
 
 if (total % 2 == 1) {
-	$('.impar').css({"visibility": "hidden", "display": "inline-block"});
+	$('.impar').css({"visibility": "hidden", "display": "inline-block",  "max-height": "10px"});
 } else {
 	$('.impar').css({"display": "none"});
 }
