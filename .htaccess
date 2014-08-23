@@ -10,17 +10,18 @@ RewriteRule ^noticias?$ noticias.html
 RewriteRule ^contacto?$ contacto.html
 
 #Busquedas
-RewriteRule ^informacion/community-manager?$ sections/busquedas/comunitym.html
-RewriteRule ^informacion/tecnico-de-campo?$ sections/busquedas/tecnicocampo.html
-RewriteRule ^informacion/office-manager?$ sections/busquedas/officemanager.html
-RewriteRule ^informacion/asistente-de-facturacion?$ sections/busquedas/asistfacturacion.html
-RewriteRule ^informacion/asistente-contable?$ sections/busquedas/asistcontable.html
+RewriteRule ^busqueda/community-manager?$ sections/busqueda/comunitym.html
+RewriteRule ^busqueda/ingeniero-jr-de-operaciones?$ sections/busqueda/ingjunior.html
+RewriteRule ^busqueda/office-manager?$ sections/busqueda/officemanager.html
+RewriteRule ^busqueda/asistente-de-facturacion?$ sections/busqueda/asistfacturacion.html
+RewriteRule ^busqueda/asistente-contable?$ sections/busqueda/asistcontable.html
+RewriteRule ^busqueda/ingeniero-de-desarrollo-electronico?$ sections/busqueda/ingdeselec.html
 
 #Noticias
-RewriteRule ^informacion/recursos-de-la-seguridad-social?$ sections/noticias/recursos-de-la-seguridad-social.html
-RewriteRule ^informacion/resolucion-general-3653?$ sections/noticias/resolucion-afip-3653.html
-RewriteRule ^informacion/pasante-en-situacion-de-embarazo?$ sections/noticias/pasante-en-situacion-de-embarazo.html
-RewriteRule ^informacion/liquidacion-de-haberes?$ sections/noticias/liquidhaber.html
+RewriteRule ^noticia/recursos-de-la-seguridad-social?$ sections/noticia/recursos-de-la-seguridad-social.html
+RewriteRule ^noticia/resolucion-general-3653?$ sections/noticia/resolucion-afip-3653.html
+RewriteRule ^noticia/pasante-en-situacion-de-embarazo?$ sections/noticia/pasante-en-situacion-de-embarazo.html
+RewriteRule ^noticia/liquidacion-de-haberes?$ sections/noticia/liquidhaber.html
 
 
 #Asesoramiento

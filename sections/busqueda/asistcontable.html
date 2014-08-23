@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="RP Consultoría: Asesoramiento integral para su empresa" />
+	<meta name="description" content="RP Consultoría: Nos encontramos en la búsqueda de un Asistente Contable, para incorporarse al departamento de administración y finanzas de uno de nuestros principales clientes." />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-	<title>Práctica en Liquidación de Haberes</title>
+	<title>Asistente Contable</title>
 	<!--[if lt IE 9]>
 		<script src="../libs/html5shiv.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/plantilla.css">
-	<link rel="stylesheet" href="../css/noticia.css">
+	<link rel="stylesheet" href="../css/empleos.css">
 	<link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 <body>
@@ -63,7 +63,7 @@
 	<div id="mmovile">
 		<a href="#" class="icon-menu" id="menu"></a>
 		<!--Cambiar por Pagina Actual-->
-		<p>Noticias</p>
+		<p>Búsquedas</p>
 	</div>
 	<div id="msocial">
 		<p>Seguinos En:</p>
@@ -72,42 +72,59 @@
 		</ul>
 	</div>
 	<!--Inicio de Contenido-->
-	<section>
-	<article class="ccontainer">
+	<div class="ccontainer">
 		<div class="left-side">
-			<h1>Práctica en Liquidación de Haberes</h1>
-			<p>El Consejo Profesional de Ciencias Económicas realizará una charla sobre liquidación de haberes.</p>
-			<h2>Fecha y Horario</h2>
-			<p>Miércoles 27 de Agosto del 2014 - 18:30 Hs • Viamonte 1549 • Dr. Manuel Belgrano "C" •</p>
-			<h2>Información</h2>
-			<p><b>Comisión Organizadora:</b> Administración de Recursos Humanos</p>
-			<p><b>Expositores:</b> Dra. C.P. Rosana G. Pavesa y Dr. C.P. Maximiliano O. Rusconi.</p>
-			<p><b>Coordinación:</b> Dr. C.P. Omar Molina.</p>
-			<h2>Temario</h2>
+			<h1>Asistente Contable</h1>
+			<p>Nos encontramos en la búsqueda de un Asistente Contable, para incorporarse al departamento de administración y finanzas de uno de nuestros principales clientes.</p>
+			<h2>Tareas</h2>
 			<ul>
-				<li>Novedades Salariales y últimas disposiciones del sector de la construcción.</li>
-				<li>Aspectos prácticos de la liquidación de haberes.</li>
-				<li>Principales aspectos de los convenios 151/75 y 76/75</li>
+				<li>Cargas de Facturas.</li>
+				<li>Conciliaciones de cuentas</li>
+				<li>Liquidación de Ingresos Bruto, IVA.</li>
+				<li>Asientos contables.</li>
+				<li>Registraciones.</li>
 			</ul>
-
-			<br>
-			<a href="../downloads/practica-en-liquidacion-de-haberes.pdf" download="Práctica en Liquidación de Haberes" class="pdf-download"><span class="icon-pdf"> </span>Descargar PDF</a><br><br>
+			<h2>Requisitos</h2>
+			<ul>
+				<li>Estudiante de Cs. Económicas. <span class="excluyente">(EXCLUYENTE)</span> Preferentemente Contador Público.</li>
+				<li>Experiencia mínima de 1 año en posición similar.</li>
+				<li>Manejo de Excel y de sistemas contables.</li>
+				<li>Idioma Ingles</li>
+			</ul>
+			<p>Pensamos en una persona con buenas relaciones interpersonales, flexible, con sentido común,  iniciativas. Que sea responsable, pueda trabajar bajo presión, llegando a  cumplir con los términos y plazos de entrega exigidos.</p>
+			<p>Se ofrece crecimiento profesional y la posibilidad de desarrollarse  en una compañía de primer nivel.</p>
 		</div>
-		<form action="../php/consulta.php" class="consulta" method="POST">
-			<h2>Consultanos</h2><br>
-			<label for="nombre">Nombre<span class="required">*</span></label><br>
-			<input type="text" name="nombre" required><br><br>
-			<label for="apellido">Apellido<span class="required">*</span></label><br>
-			<input type="text" name="apellido" required><br><br>
-			<label for="mail">E-mail<span class="required">*</span></label><br>
-			<input type="email" name="mail" required><br><br>
-			<label for="comment">Consulta<span class="required">*</span></label><br>
-			<textarea name="comment" cols="30" rows="5" required></textarea><br><br>
-			<input type="hidden" name="title" value="Consulta: Charla Liquidación de Haberes">
-			<input type="submit">
-		</form>
-	</article>
-	</section>
+		<img class="busqueda-activa" src="../img/busqueda-activa.png" alt="Busqueda Activa">
+		<hr>
+		<div class="center-me">
+			<form action="../php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda6">
+				<h2>Postularme</h2>
+				<div class="post-nombre">
+					<label for="first_name">Nombre</label><span>*</span><br>
+					<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+				</div><br>
+				<div class="post-apellido">
+					<label for="last_name">Apellido</label><span>*</span><br>
+					<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+				</div><br>
+				<div class="post-mail">
+					<label for="mail">E-mail</label><span>*</span><br>
+					<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+				</div><br>
+				<div class="post-remuneracion">
+					<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
+					<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
+				</div><br>
+				<div class="post-cv">
+					<label for="cv">Curriculum</label><span>*</span><br>
+					<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+					<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+				</div><br>
+				<input type="hidden" name="title" value="Asistente Contable">
+				<input type="submit" name="submit" value="Postularme" class="post-enviar">
+			</form><br>	
+		</div>
+	</div>
 	<!--Final de Contenido-->
 	<footer>
 		<p>Av.Caseros 2478</p>

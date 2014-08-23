@@ -2,15 +2,15 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="RP Consultoría: Asesoramiento integral para su empresa" />
+	<meta name="description" content="RP Consultoría: ¿Qué tratamiento recibe una mujer contratada como pasante bajo la ley 26427 frente a una situación de embarazo?" />
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
-	<title>Office Manager</title>
+	<title>Pasante en Situación de Embarazo</title>
 	<!--[if lt IE 9]>
 		<script src="../libs/html5shiv.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/plantilla.css">
-	<link rel="stylesheet" href="../css/empleos.css">
+	<link rel="stylesheet" href="../css/noticia.css">
 	<link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 <body>
@@ -63,7 +63,7 @@
 	<div id="mmovile">
 		<a href="#" class="icon-menu" id="menu"></a>
 		<!--Cambiar por Pagina Actual-->
-		<p>Búsquedas</p>
+		<p>Noticias</p>
 	</div>
 	<div id="msocial">
 		<p>Seguinos En:</p>
@@ -72,55 +72,31 @@
 		</ul>
 	</div>
 	<!--Inicio de Contenido-->
-	<div class="ccontainer">
+	<section>
+	<article class="ccontainer">
 		<div class="left-side">
-			<h1>Office Manager</h1>
-			<p>Buscamos una Asistente Personal para incorporarse a uno de nuestros clientes. Buscamos personas con iniciativa, autonomía, muy buenos dotes de comunicación, capacidad de planificación y organización, con actitud  servicial  y muy buenas relaciones interpersonales.</p>
-			<h2>Requisitos</h2>
-			<ul>
-				<li>Sexo: Femenino <span class="excluyente">(EXCLUYENTE)</span> Edad: 28 - 42 años.</li>
-				<li>Dominio de paquete office, Excel avanzado <span class="excluyente">(EXCLUYENTE)</span>.</li>
-				<li>INGLES: avanzado <span class="excluyente">(EXCLUYENTE)</span> y Portugués (Preferentemente).</li>
-				<li>Experiencia mínima de dos años en posiciones similares <span class="excluyente">(EXCLUYENTE)</span>.</li>
-			</ul>
-			<h2>Tareas</h2>
-			<ul>
-				<li>Asistente Personal del Director y disponibilidad para sus cuestiones personales.</li>
-				<li>Asistir a la dirección de la empresa, coordinación de reuniones, manejo de correspondencia, organización de viajes corporativos, seguimientos de pagos, colaborar en armado de presentaciones, coordinación y recepción de visitas corporativas, entre otras tareas.</li>
-				<li>Horario: lunes a viernes de 9:00 a 18.00 Hs. Zona de trabajo: Parque Patricios Contrato estable y directo con empresa.</li>
-			</ul>
+			<h1>Pasante en Situación de Embarazo</h1>
+			<h2 style="max-width: 800px;">¿Qué tratamiento recibe una mujer contratada como pasante bajo la ley 26427 frente a una situación de embarazo?</h2>
+			<p>Los acuerdos individuales no podrán rescindirse por causa de maternidad. Las pasantías de las alumnas se suspenderán en el período comprendido entre los 45 días anteriores al parto y hasta los 45 días posteriores al mismo. Durante dicho período, no percibirá la asignación estímulo del empleador, mas tendrá garantizada su reincorporación a la pasantía una vez cumplidos los plazos antedichos.</p>
+			<p><i>Fuente: Errepar</i></p>
+			<br>
+			<a href="../downloads/pasante-en-situacion-de-embarazo.pdf" download="Pasante en Situación de Embarazo" class="pdf-download"><span class="icon-pdf"> </span>Descargar PDF</a><br><br>
 		</div>
-		<img class="busqueda-activa" src="../img/busqueda-activa.png" alt="Busqueda Activa">
-		<hr>
-		<div class="center-me">
-			<form action="../php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda4">
-				<h2>Postularme</h2>
-				<div class="post-nombre">
-					<label for="first_name">Nombre</label><span>*</span><br>
-					<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-				</div><br>
-				<div class="post-apellido">
-					<label for="last_name">Apellido</label><span>*</span><br>
-					<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-				</div><br>
-				<div class="post-mail">
-					<label for="mail">E-mail</label><span>*</span><br>
-					<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-				</div><br>
-				<div class="post-remuneracion">
-					<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-					<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-				</div><br>
-				<div class="post-cv">
-					<label for="cv">Curriculum</label><span>*</span><br>
-					<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-					<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-				</div><br>
-				<input type="hidden" name="title" value="Office Manager">
-				<input type="submit" name="submit" value="Postularme" class="post-enviar">
-			</form><br>	
-		</div>
-	</div>
+		<form action="../php/consulta.php" class="consulta" method="POST">
+			<h2>Consultanos</h2><br>
+			<label for="nombre">Nombre<span class="required">*</span></label><br>
+			<input type="text" name="nombre" required><br><br>
+			<label for="apellido">Apellido<span class="required">*</span></label><br>
+			<input type="text" name="apellido" required><br><br>
+			<label for="mail">E-mail<span class="required">*</span></label><br>
+			<input type="email" name="mail" required><br><br>
+			<label for="comment">Consulta<span class="required">*</span></label><br>
+			<textarea name="comment" cols="30" rows="5" required></textarea><br><br>
+			<input type="hidden" name="title" value="Consulta: Pasante en Situación de Embarazo">
+			<input type="submit">
+		</form>
+	</article>
+	</section>
 	<!--Final de Contenido-->
 	<footer>
 		<p>Av.Caseros 2478</p>
