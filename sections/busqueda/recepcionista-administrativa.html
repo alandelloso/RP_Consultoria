@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="RP Consultoría: Estamos buscando una Recepcionista administrativa para Perú." />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>Recepcionista Administrativa</title>
+	<!--[if lt IE 9]>
+		<script src="../libs/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/plantilla.css">
+	<link rel="stylesheet" href="../css/empleos.css">
+	<link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+	<div id="mnav">
+		<p>Menú</p>
+		<div id="cerrar">
+			<div id="flechita" class="icon-chevron-left"></div>
+		</div>
+		<ul>
+			<li><a href="../inicio">Inicio</a></li>
+			<li><a href="../asesoramiento">Asesoramiento</a></li>
+			<li><a href="../busquedas">Búsquedas</a></li>
+			<li><a href="../noticias">Noticias</a></li>
+			<li><a href="../contacto">Contacto</a></li>
+		</ul>
+	</div>
+	<header>
+		<div class="container">
+			<figure id="logo">
+				<img src="../img/logo.png" alt="Logo RP">
+			</figure>
+			<div id="social">
+				<p>Seguinos En:</p>
+				<ul>
+					<li id="facebook" ><a href="https://www.facebook.com/consultoriaRP" target=_blank class="icon-facebook"></a></li>
+					<li id="twitter"><a href="http://www.twitter.com/consultorarp" class="icon-twitter"></a></li>
+					<li id="gplus"><a href="https://plus.google.com/u/0/b/116129234397509918956/+RPConsultoriaBuenosAires/posts" target=_blank class="icon-google-plus"></a></li>
+					<!-- <li id="linkedin"><a href="#" class="icon-linkedin"></a></li> -->
+				</ul>
+			</div>
+			<div id="hgroup">
+				<h2 id="h1">RP Consultoria</h2><br>
+				<p>Asesoramiento Integral Para Su Empresa</p>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="navcontainer">
+			<ul>
+				<li><a href="../inicio">Inicio</a></li><li><a href="../asesoramiento">Asesoramiento</a></li><li><a href="../busquedas">Búsquedas</a></li><li><a href="../noticias">Noticias</a></li><li><a href="../contacto">Contacto</a></li>
+			</ul>
+			<div id="tsocial">
+				<p>Seguinos En:</p>
+				<ul>
+					<li><a href="https://www.facebook.com/consultoriaRP" class="icon-facebook" id="t-facebook"></a></li><li><a href="http://www.twitter.com/consultorarp" class="icon-twitter" id="t-twitter"></a></li><li><a href="https://plus.google.com/u/0/b/116129234397509918956/+RPConsultoriaBuenosAires/posts" class="icon-google-plus" id="t-gplus"></a></li><!-- <li><a href="#" class="icon-linkedin" id="t-linkedin"></a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="mmovile">
+		<a href="#" class="icon-menu" id="menu"></a>
+		<!--Cambiar por Pagina Actual-->
+		<p>Búsquedas</p>
+	</div>
+	<div id="msocial">
+		<p>Seguinos En:</p>
+		<ul>
+			<li><a href="https://www.facebook.com/consultoriaRP" class="icon-facebook" id="m-facebook"></a></li><li><a href="http://www.twitter.com/consultorarp" class="icon-twitter" id="m-twitter"></a></li><li><a href="https://plus.google.com/u/0/b/116129234397509918956/+RPConsultoriaBuenosAires/posts" class="icon-google-plus" id="m-gplus"></a></li><!-- <li><a href="#" class="icon-linkedin" id="m-linkedin"></a></li> -->
+		</ul>
+	</div>
+	<!--Inicio de Contenido-->
+	<div class="ccontainer">
+		<div class="left-side">
+			<h1>Recepcionista Administrativa</h1>
+			<p>Estamos en la búsqueda de una Administrativa, para el departamento comercial de Perú.</p>
+			<h2>Tareas</h2>
+			<p>Entre sus tareas se encuentran la asistencia a los Ejecutivos de negoción de la compañía, en la administración de la documentación requerida para llevar a cabo los negoción de la compañía. Atención telefónica, orden de las documentaciones, y asistencia general al todo el departamento comercial.</p>
+			<h2>Perfil</h2>
+			<p>Buscamos una candidata con  fuerte perfil comercial, amable, cordial y muy buen trato. Dado que tendrá que contactarse con los clientes para poder solicitar documentación, corroborar el estado de los servicios y demás.</p>
+			<p>La empresa ofrece estabilidad laboral, crecimiento profesional y personal. Remuneración acorde a las tareas solicitadas.</p>
+		</div>
+		<img class="busqueda-activa" src="../img/busqueda-activa.png" alt="Busqueda Activa">
+		<hr>
+		<div class="center-me">
+			<form action="../php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda6">
+				<h2>Postularme</h2>
+				<div class="post-nombre">
+					<label for="first_name">Nombre</label><span>*</span><br>
+					<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+				</div><br>
+				<div class="post-apellido">
+					<label for="last_name">Apellido</label><span>*</span><br>
+					<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+				</div><br>
+				<div class="post-mail">
+					<label for="mail">E-mail</label><span>*</span><br>
+					<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+				</div><br>
+				<div class="post-remuneracion">
+					<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
+					<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
+				</div><br>
+				<div class="post-cv">
+					<label for="cv">Curriculum</label><span>*</span><br>
+					<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+					<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+				</div><br>
+				<input type="hidden" name="title" value="Recepcionista Administrativa (Perú)">
+				<input type="submit" name="submit" value="Postularme" class="post-enviar">
+			</form><br>	
+		</div>
+	</div>
+	<!--Final de Contenido-->
+	<footer>
+		<p>Av.Caseros 2478</p>
+		<p>Lunes a Viernes de 9:00 a 18:00</p>
+		<p><span style="color:#aaa">(+54) 11</span> 4943-5302</p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="../javascript/prefixfree.js"></script>
+	<script src="../javascript/menu.js"></script>
+</body>
+</html>

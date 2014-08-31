@@ -17,6 +17,9 @@ RewriteRule ^busqueda/asistente-de-facturacion?$ sections/busqueda/asistfacturac
 RewriteRule ^busqueda/asistente-contable?$ sections/busqueda/asistcontable.html
 RewriteRule ^busqueda/ingeniero-de-desarrollo-electronico?$ sections/busqueda/ingdeselec.html
 
+#Peru
+RewriteRule ^busqueda/recepcionista-administrativa?$ sections/busqueda/recepcionista-administrativa.html
+
 #Noticias
 RewriteRule ^noticia/recursos-de-la-seguridad-social?$ sections/noticia/recursos-de-la-seguridad-social.html
 RewriteRule ^noticia/resolucion-general-3653?$ sections/noticia/resolucion-afip-3653.html
