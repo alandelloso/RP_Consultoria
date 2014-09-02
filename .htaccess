@@ -25,6 +25,8 @@ RewriteRule ^noticia/recursos-de-la-seguridad-social?$ sections/noticia/recursos
 RewriteRule ^noticia/resolucion-general-3653?$ sections/noticia/resolucion-afip-3653.html
 RewriteRule ^noticia/pasante-en-situacion-de-embarazo?$ sections/noticia/pasante-en-situacion-de-embarazo.html
 RewriteRule ^noticia/liquidacion-de-haberes?$ sections/noticia/liquidhaber.html
+RewriteRule ^noticia/pago-a-empleados-de-comercio?$ sections/noticia/pago-a-empleados-de-comercio.html
+
 
 
 #Asesoramiento
