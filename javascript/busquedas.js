@@ -35,9 +35,6 @@ function openPost() {
 
 
 function openVol() {
-	$('#postulacion-voluntaria').slideToggle().css("display", "inline-block");
+	$('#postulacion-voluntaria').slideToggle();
 }
 
-function hideVol() {
-	$('#postulacion-voluntaria').hide();
-}
