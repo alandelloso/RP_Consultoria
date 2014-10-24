@@ -10,29 +10,49 @@ RewriteRule ^noticias?$ noticias.html
 RewriteRule ^contacto?$ contacto.html
 
 #Busquedas
+
 RewriteRule ^busqueda/community-manager?$ sections/busqueda/comunitym.html
+
 RewriteRule ^busqueda/ingeniero-jr-de-operaciones?$ sections/busqueda/ingjunior.html
+
 RewriteRule ^busqueda/office-manager?$ sections/busqueda/officemanager.html
+
 RewriteRule ^busqueda/asistente-de-facturacion?$ sections/busqueda/asistfacturacion.html
+
 RewriteRule ^busqueda/asistente-contable?$ sections/busqueda/asistcontable.html
+
 RewriteRule ^busqueda/ingeniero-de-desarrollo-electronico?$ sections/busqueda/ingdeselec.html
+
 RewriteRule ^busqueda/responsable-de-compras?$ sections/busqueda/responsable-de-compras.html
+
 RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
-
-
-
 
 #Peru
 RewriteRule ^busqueda/recepcionista-administrativa?$ sections/busqueda/recepcionista-administrativa.html
 
+
+
+
 #Noticias
+
 RewriteRule ^noticia/recursos-de-la-seguridad-social?$ sections/noticia/recursos-de-la-seguridad-social.html
+
 RewriteRule ^noticia/resolucion-general-3653?$ sections/noticia/resolucion-afip-3653.html
+
 RewriteRule ^noticia/pasante-en-situacion-de-embarazo?$ sections/noticia/pasante-en-situacion-de-embarazo.html
+
 RewriteRule ^noticia/liquidacion-de-haberes?$ sections/noticia/liquidhaber.html
+
 RewriteRule ^noticia/pago-a-empleados-de-comercio?$ sections/noticia/pago-a-empleados-de-comercio.html
+
 RewriteRule ^noticia/incremento-del-salario-minimo-vital-y-movil?$ sections/noticia/incremento-del-salario-minimo-vital-y-movil.html
+
 RewriteRule ^noticia/aumento-aportes-mensuales-autonomos?$ sections/noticia/aumento-aportes-mensuales-autonomos.html
+
+RewriteRule ^noticia/regularizacion-de-deuda?$ sections/noticia/regularizacion-de-deuda.html
+
+RewriteRule ^noticia/aumento-sueldo-minimo-personal-domestico?$ sections/noticia/aumento-sueldo-minimo-personal-domestico.html
+
 
 
 
