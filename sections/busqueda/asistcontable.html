@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	<title>Asistente Contable</title>
 	<!--[if lt IE 9]>
-		<script src="../libs/html5shiv.min.js"></script>
+		<script>
+		window.location.href="http://www.rpconsultoria.com.ar/compatibilidad";
+		</script>
 	<![endif]-->
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/plantilla.css">
@@ -98,31 +100,44 @@
 		<hr>
 		<div class="center-me">
 			<form action="../php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda6">
-				<h2>Postularme</h2>
-				<div class="post-nombre">
-					<label for="first_name">Nombre</label><span>*</span><br>
-					<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-				</div><br>
-				<div class="post-apellido">
-					<label for="last_name">Apellido</label><span>*</span><br>
-					<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-				</div><br>
-				<div class="post-mail">
-					<label for="mail">E-mail</label><span>*</span><br>
-					<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-				</div><br>
-				<div class="post-remuneracion">
-					<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-					<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-				</div><br>
-				<div class="post-cv">
-					<label for="cv">Curriculum</label><span>*</span><br>
-					<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-					<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-				</div><br>
-				<input type="hidden" name="title" value="Asistente Contable">
-				<input type="submit" name="submit" value="Postularme" class="post-enviar">
-			</form><br>	
+				<table>
+					<tr>
+						<td colspan="2"><h2>Postularme</h2></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><label for="first_name">Nombre:</label><span>*</span></td>
+						<td><input type="text" name="first_name" placeholder="Ingrese su Nombre" required></td>
+					</tr>
+					<tr>
+						<td><label for="last_name">Apellido:</label><span>*</span><br></td>
+						<td><input type="text" name="last_name" placeholder="Ingrese su Apellido" required></td>
+					</tr>
+					<tr>
+						<td><label for="mail">E-mail:</label><span>*</span><br></td>
+						<td><input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+						</td>
+					</tr>
+					<tr>
+						<td><label for="remuneracion">Remuneración Bruta:</label><span>*</span></td>
+						<td><input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
+						</td>
+					</tr>
+					<tr>
+						<td><label for="cv">Curriculum:</label><span>*</span><br></td>
+						<td>
+							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+						</td>
+						<input type="hidden" name="title" value="Asistente Contable">
+					<tr>
+						<td colspan="2" id="postular"><input type="submit" name="submit" value="Postularme" class="post-enviar"></td>
+					</tr>
+				</table>			
+			</form>
 		</div>
 	</div>
 	<!--Final de Contenido-->

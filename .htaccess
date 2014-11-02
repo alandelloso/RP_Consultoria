@@ -8,6 +8,7 @@ RewriteRule ^asesoramiento?$ asesoramiento.html
 RewriteRule ^busquedas?$ busquedas.html
 RewriteRule ^noticias?$ noticias.html
 RewriteRule ^contacto?$ contacto.html
+RewriteRule ^compatibilidad?$ legacy.html
 
 #Busquedas
 
@@ -26,6 +27,8 @@ RewriteRule ^busqueda/ingeniero-de-desarrollo-electronico?$ sections/busqueda/in
 RewriteRule ^busqueda/responsable-de-compras?$ sections/busqueda/responsable-de-compras.html
 
 RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
+
+RewriteRule ^busqueda/desarrollador-senior?$ sections/busqueda/desarrollador-senior.html
 
 #Peru
 RewriteRule ^busqueda/recepcionista-administrativa?$ sections/busqueda/recepcionista-administrativa.html
@@ -52,6 +55,8 @@ RewriteRule ^noticia/aumento-aportes-mensuales-autonomos?$ sections/noticia/aume
 RewriteRule ^noticia/regularizacion-de-deuda?$ sections/noticia/regularizacion-de-deuda.html
 
 RewriteRule ^noticia/aumento-sueldo-minimo-personal-domestico?$ sections/noticia/aumento-sueldo-minimo-personal-domestico.html
+
+RewriteRule ^noticia/confeccion-online-de-declaraciones-juradas?$ sections/noticia/confeccion-online-de-declaraciones-juradas.html
 
 
 

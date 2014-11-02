@@ -1,0 +1,2 @@
+@import url("http://fonts.googleapis.com/css?family=Muli");
+body{background:#eee;color:#555;font-family:'Muli',sans-serif}#header{background:#f29700;color:#555;padding-left:30px;}#header h1{margin:0;padding-bottom:10px;padding-top:10px}#header h2{margin:0;padding-bottom:10px}#section{text-align:center;padding:100px 0 100px 30px;}#section table{text-align:center;margin:0 auto;}#section table td{padding-right:100px}#section table img{width:100px}#footer{background:#332000;text-align:center;padding:25px 0 25px 0;}#footer h3{color:#ddd}

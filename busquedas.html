@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	<title>Búsquedas de Trabajo - RP Consultoría</title>
 	<!--[if lt IE 9]>
-		<script src="libs/html5shiv.min.js"></script>
-		<![endif]-->
+		<script>
+		window.location.href="http://www.rpconsultoria.com.ar/compatibilidad";
+		</script>
+	<![endif]-->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/plantilla.css">
 		<link rel="stylesheet" href="css/styles.css">
@@ -112,6 +114,59 @@
 				</article>
 				</div><br>
 				<!-- FIN POSTULACIÓN VOLUNTARIA -->
+
+				<!-- INICIO BÚSQUEDA -->
+				<article class="busqueda-new">
+					<div class="busqueda-title">
+						<h3>Desarrollador Sénior</h3>
+					</div>
+					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
+					<p>El candidato ideal es un apasionado de la tecnología, tiene experiencia en desarrollo de Software, ama aprender, es detallista, y disfruta de trabajar en un ambiente de equipo usando una variedad de tecnologías ...<a class="leermas" href="busqueda/desarrollador-senior">Leer+</a> </p>
+					<div class="busqueda-botones">
+						<img src="img/cerrada.png" style="width: 200px;" class="abierta">
+						<div class="boton sb">
+							<a style="cursor: pointer;">Sugerir</a>
+						</div>
+						<div class="boton pb">
+							<a style="cursor: pointer;">Postularme</a>
+						</div>
+						<div class="busquedas-social bs hide">
+							<ul>
+								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/desarrollador-senior" target=_blank class="icon-facebook"></a></li>
+								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/desarrollador-senior" target=_blank class="icon-twitter"></a></li>
+								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/desarrollador-senior" target=_blank class="icon-google-plus"></a></li>
+							</ul>
+						</div>
+						<div class="busquedas-postularme bp hide">
+							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
+								<div class="post-nombre">
+									<label for="first_name">Nombre</label><span>*</span><br>
+									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
+								</div>
+								<div class="post-apellido">
+									<label for="last_name">Apellido</label><span>*</span><br>
+									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
+								</div>
+								<div class="post-mail">
+									<label for="email">E-mail</label><span>*</span><br>
+									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
+								</div>
+								<div class="post-remuneracion">
+									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
+									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
+								</div><br>
+								<div class="post-cv">
+									<label for="cv">Curriculum</label><span>*</span><br>
+									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
+									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
+								</div>
+								<input type="hidden" name="title" value="Desarrollador Senior">
+								<input type="submit" name="submit" value="Postularme" class="post-enviar">
+							</form>				
+						</div>
+					</div>
+				</article>
+				<!-- FIN BUSQUEDA -->
 
 				<!-- INICIO BÚSQUEDA -->
 				<article class="busqueda-new">
@@ -313,214 +368,6 @@
 				</article>
 				<!-- FIN BUSQUEDA -->
 
-				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
-						<h3>Responsable de Compras Sr.</h3>
-					</div>
-					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
-					<p>Nuestro cliente, una importante empresa de tecnología ubicada en capital federal incorpora un Responsable  de Compras Regionales, que posea un marcado perfil comercial. Pensamos en un profesional universitario...<a class="leermas" href="busqueda/responsable-de-compras">Leer+</a> </p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="cerrada">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
-						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/responsable-de-compras" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/responsable-de-compras" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/responsable-de-compras" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Responsable de Compras">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>				
-						</div>
-					</div>
-				</article>
-				<!-- FIN BUSQUEDA -->
-
-				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
-						<h3>Asistente Contable</h3>
-					</div>
-					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
-					<p>Nos encontramos en la búsqueda de un Asistente Contable, para incorporarse al departamento de administración y finanzas de uno de nuestros principales clientes. Pensamos en una persona con buenas relaciones interpersonales, flexible, con sentido común...<a class="leermas" href="busqueda/asistente-contable">Leer+</a></p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="cerrada">
-						<div class="boton sb"><a style="cursor: pointer;">Sugerir</a></div>
-						<div class="boton pb"><a style="cursor: pointer;">Postularme</a></div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/asistente-contable" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/asistente-contable" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/asistente-contable" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Asistente Contable">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>	
-						</div>
-					</div>
-				</article>
-				<!-- FIN BUSQUEDA -->
-				
-				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
-						<h3>Asistente de Facturación, Créditos y Cobranzas </h3>
-					</div>
-					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
-					<p>Estamos en la Búsqueda de un Asistente de Facturación, créditos y cobranzas para  una importante empresa. Serán sus principales responsabilidades efectuar las facturaciones, realizar el seguimiento de cobranzas...<a class="leermas" href="busqueda/asistente-de-facturacion">Leer+</a></p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="cerrada">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
-						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/asistente-de-facturacion" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/asistente-de-facturacion" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/asistente-de-facturacion" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Asistente de Facturación">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>	
-						</div>
-					</div>
-				</article>	
-				<!-- FIN BUSQUEDA -->
-
-				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
-						<h3>Community Manager  C/ Portugués</h3>
-					</div>
-					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
-					<p>Estamos en la búsqueda de un Community Manager c/Portugués, para una importante Empresa de Comunicación y marketing digital. Seleccionaremos  para su equipo comercial del Departamento de Portugués, estudiantes o...<a class="leermas" href="busqueda/community-manager">Leer+</a> </p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="cerrada">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
-						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/community-manager" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/community-manager" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/community-manager" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Community Manager">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>				
-						</div>
-					</div>
-				</article>
-				<!-- FIN BUSQUEDA -->
-				
 				<!-- IMPAR -->
 				<article class="busqueda-new impar">
 					<div class="busqueda-title">
