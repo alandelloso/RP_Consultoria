@@ -5,8 +5,8 @@ RP Consultoría
 <p>El mismo está desarrollado por Alan Dell' Oso con:</p>
 <ul>
 <li>HTML 5</li>
-<li>CSS 3 _(Con_ _Stylus)_</li>
-<li>JavaScript _(Con JQuery)_</li>
+<li>CSS 3 (_Con Stylus_)</li>
+<li>JavaScript (Con JQuery)</li>
 <li>PHP Mailer</li>
 </ul>
 
