@@ -1,10 +1,11 @@
 RP Consultoría
 ==============
 
-Este es el website de la consultora de RRHH y Contabilidad "RP Consultoría" alojado en http://www.rpconsultoria.com.ar
-El mismo está desarrollado por Alan Dell' Oso con:
-• HTML 5
-• CSS 3 (Con Stylus)
-• JavaScript (Con JQuery)
-• PHP Mailer
-
+<p>Este es el website de la consultora de RRHH y Contabilidad "RP Consultoría" alojado en <a href="http://www.rpconsultoria.com.ar">www.rpconsultoria.com.ar</a></p>
+<p>El mismo está desarrollado por Alan Dell' Oso con:</p>
+<ul>
+<li>HTML 5</li>
+<li>CSS 3 <span stlye="font-style: italic;">(Con Stylus)<span></li>
+<li>JavaScript <span stlye="font-style: italic;">(Con JQuery)<span></li>
+<li>PHP Mailer</li>
+</ul>
