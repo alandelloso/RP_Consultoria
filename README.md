@@ -5,7 +5,7 @@ RP Consultoría
 <p>El mismo está desarrollado por Alan Dell' Oso con:</p>
 <ul>
 <li>HTML 5</li>
-<li>CSS 3 <span stlye="font-style: italic;">(Con Stylus)<span></li>
-<li>JavaScript <span stlye="font-style: italic;">(Con JQuery)<span></li>
+<li>CSS 3 <span style="font-style: italic;">(Con Stylus)<span></li>
+<li>JavaScript <span style="font-style: italic;">(Con JQuery)<span></li>
 <li>PHP Mailer</li>
 </ul>
