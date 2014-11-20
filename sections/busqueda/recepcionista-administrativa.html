@@ -87,32 +87,25 @@
 		<img class="busqueda-activa" src="../img/cerrada.png" alt="Busqueda Cerrada" style="width: 250px; transform: rotate(-30deg); margin-left: 20px;">
 		<hr>
 		<div class="center-me">
-			<form action="../php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda6">
-				<h2>Postularme</h2>
-				<div class="post-nombre">
-					<label for="first_name">Nombre</label><span>*</span><br>
+				<form action="../php/busqueda.php" method="POST" enctype="multipart/form-data" name="busqueda1">
+					<h2>Postularme</h2>
 					<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-				</div><br>
-				<div class="post-apellido">
-					<label for="last_name">Apellido</label><span>*</span><br>
+					<br>
+
 					<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-				</div><br>
-				<div class="post-mail">
-					<label for="mail">E-mail</label><span>*</span><br>
+					<br>
 					<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-				</div><br>
-				<div class="post-remuneracion">
-					<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-					<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-				</div><br>
-				<div class="post-cv">
-					<label for="cv">Curriculum</label><span>*</span><br>
+					<br>
+					<input type="number" name="remuneracion" placeholder="Bruto Pretendido (ARS)" required min="1000">
+					<br>
+					<br>
+					<label for="cv">Cargue su CV</label>
 					<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
 					<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-				</div><br>
+					<br>
 				<input type="hidden" name="title" value="Recepcionista Administrativa (Perú)">
 				<input type="submit" name="submit" value="Postularme" class="post-enviar">
-			</form><br>	
+				</form><br>
 		</div>
 	</div>
 	<!--Final de Contenido-->
