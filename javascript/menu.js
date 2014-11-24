@@ -29,7 +29,8 @@ function app() {
 }
 
 function openMenu() {
-    $('#mnav').css('left',0);
+    var dheight = $(document).height();
+    $('#mnav').css({'left': '0', 'height': dheight});
 }
 
 function closeMenu() {

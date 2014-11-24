@@ -1,9 +1,14 @@
+//Colors
+lightcolor = #FF8B63
+maincolor = #FF9800
+darkcolor = #EF6C00 
+darkestcolor = #E65100
+breakcolor = #F50057
+darkbreakcolor = #C51162
+
 //Variables
 bodybg = #EEE
-color1 = #F29700
 color2 = #D98700
-color3 = #B26F00
-color4 = #734800
 color5 = #332000
 facebook = #3B5999
 gplus = #BC2D1D
@@ -15,7 +20,7 @@ twitter = #1AB2E8
 
 /*Vista 1*/
 select
-	border 1px solid color1
+	border 1px solid maincolor
 	color color2
 	display block
 	margin-left .5em
@@ -74,9 +79,8 @@ select
 	display none
 
 .noticia-new
-	background #eddcc7
-	border-radius 10px
-	color textow
+	background maincolor
+	color bodybg
 	margin .5em
 	max-width 545px
 	text-align left
@@ -87,47 +91,40 @@ select
 		font-style italic
 		margin .3em .2em .5em .2em
 		.fecha
-			color color4
+			color darkestcolor
 			font-weight bold
 	.noticia-botonholder
 		text-align right
 		.boton 
-			background color2
-			border solid 2px color4
-			border-radius 10px
+			background darkcolor
 			cursor pointer
-			display inline-block
-			height 30px 
+			display inline-block 
 			margin  .5em 1em .5em 0
-			max-height 30px
-			max-width 120px
 			text-align center
 			transition all .5s ease-in
 			width 120px
 			a 
 				color textob
 				display block 
-				padding .30em
+				padding  .8em .3em
 				text-decoration none
 			&:hover.boton
-				background color3
+				background darkestcolor
 	.noticia-leer
-		color color4
+		color bodybg
 		font-size 1.1em
+		background darkcolor
 		display inline
 		font-weight bold
-		padding-left .5em
+		border-radius 10px
+		padding 0 .7em
 		text-decoration none
 		transition all .5s ease-in
 		&:hover
-			color color3
+			background darkestcolor
 	.noticia-tag
-		background color2
-		border-top solid 2px color1
-		border-right solid 2px color1
-		border-bottom solid 2px color1
-		border-radius 0 5px 5px 0
-		box-shadow color4 4px 4px 0
+		background darkestcolor
+		box-shadow rgba(0,0,0,0.5) 5px 5px 20px
 		margin-top 1em
 		color textob
 		font-style italic
@@ -136,11 +133,10 @@ select
 		text-align right
 		width 100px
 	.noticia-title
-		background color2
-		border-radius 8px 8px 0 0 
 		font-size 16pt
-		color color4 
+		color bodybg
 		font-weight bold
+		margin .5em 0 1em 0
 		padding-left .2em
 		text-align left
 		h3
@@ -150,7 +146,6 @@ select
 
 .noticia-social
 	background rgba(0,0,0,0.1)
-	border-radius 0 0 8px 8px
 	display none
 	height 5em
 	max-width 545px 
@@ -192,13 +187,20 @@ select
 	.impar
 		display none
 
-@media (min-width: 800px)
+@media (min-width: 852px)
 
-	// .ncontainer
-	// 	background-image url("../img/fondo-noticias.png")
-	// 	background-position center top 
-	// 	background-size 1200px
-	// 	background-repeat no-repeat
+	.noticia-new
+			display inline-block
+			vertical-align top
+			width 350px
+			
+@media (min-width: 974px)
+
+	.noticia-new
+			display inline-block
+			vertical-align top
+			width 450px
+
 
 @media (min-width: 1200px)
 
@@ -216,5 +218,4 @@ select
 		visibility hidden
 
 	.noticia-new
-		display inline-block
-		vertical-align top
+		width auto

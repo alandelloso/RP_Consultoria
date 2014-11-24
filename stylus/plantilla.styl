@@ -62,13 +62,16 @@
   &:before
     content "\e60a"
 
+//Paleta
+lightcolor = #FF8B63
+maincolor = #FF9800
+darkcolor = #EF6C00 
+darkestcolor = #E65100
+breakcolor = #F50057
+darkbreakcolor = #C51162
+
 //Variables
 bodybg = #EEE
-color1 = #F29700
-color2 = #D98700
-color3 = #B26F00
-color4 = #734800
-color5 = #332000
 facebook = #3B5999
 gplus = #BC2D1D
 linkedin = #2A497F
@@ -85,26 +88,28 @@ body
 	font-size 16px
 
 footer
-	background color5
+	background darkestcolor
 	color bodybg
 	height 85px
 	max-height 85px
 	text-align center
+	span
+		color lightcolor
 	p 
 		margin 0
 		padding .2em 0
 
 h1
-	color color3
+	color darkcolor
 	font-family muli
 
 h2
-	color color1
+	color maincolor
 	font-family muli
 	margin 0
 
 header
-	background color2
+	background maincolor
 	height 50px
 	max-height 50px
 	overflow hidden
@@ -126,7 +131,7 @@ header
 
 
 hr
-	border solid 2px color1
+	border solid 2px maincolor
 	margin 1em
 
 nav
@@ -134,7 +139,7 @@ nav
 
 //Estilos por ID
 #mmovile
-	background color3
+	background darkcolor
 	color bodybg
 	height 40px
 	max-height 40px
@@ -143,69 +148,62 @@ nav
 	a 
 		color bodybg
 		float left
-		font-size 20px
-		margin .45em .3em
+		font-size 30px
+		padding .18em .5em
 		text-decoration none
 	p
 		display inline-block
 		font-family muli
-		margin .55em 0
+		margin .55em 0 .55em -1em
 
 #mnav
-	-moz-transition all .5s ease-out
-	-ms-transition all .5s ease-out
-	-o-transition all .5s ease-out
-	-webkit-transition all .5s ease-out
-	background rgba(0,0,0,0.9)
-	border-radius 0 0 10px 10px
-	height 150%
+	transition all .5s ease-out
+	background darkcolor
 	left -15em
 	min-height 150%
 	min-width 15em
 	overflow hidden
 	position absolute
 	p
-		color color1
+		color bodybg
 		display inline-block
 		font-family muli
-		font-size 20px
+		font-size 30px
+		font-weight bold
 		margin .5em 0 .5em .5em
 	ul
 		list-style none
 		padding 0
 		li
-			border-bottom solid 3px color1
 			font-size 18px
 			transition all .5s ease
 			&:hover
-				border-bottom solid 3px color4
+				background darkestcolor
 			a
 				color bodybg
 				display block
 				padding 1.5em 0 .5em 1em
 				text-decoration none
 	#cerrar
-		background color1
-		border-bottom solid 2px color3
-		border-left solid 2px color3
+		background breakcolor
+		border-radius 100%
+		box-shadow rgba(0,0,0,0.5) 5px 5px 15px
 		cursor pointer
 		float right
-		height 50px
+		margin .5em 1em 0 0 
 		position relative
 		text-align center
-		top -5.5%
 		transition all .5s ease
-		width 50px
 		&:hover
-			background color3
-			padding-right 15px
+			background darkbreakcolor
 		#flechita
 			color bodybg
+			display block
 			font-size 1.5em
-			margin-top .5em
+			padding .7em .8em .7em .7em
 
 #msocial
-	background color4
+	background darkestcolor
 	color bodybg
 	font-family muli
 	height 40px
@@ -263,11 +261,12 @@ nav
 		display none
 
 	nav
-		background color3
+		background darkcolor
 		display block
 		height 40px
 		max-height 40px
 		overflow hidden
+		z-index 100
 		#tsocial
 			display inline-block
 			float right
@@ -324,10 +323,10 @@ nav
 				margin 0
 				padding 0
 				&:hover a
-					border-bottom 5px solid color1
+					border-bottom 5px solid maincolor
 					
 				a
-					border-bottom 5px solid color5
+					border-bottom 5px solid darkestcolor
 					color #FFF
 					display block
 					padding .65em 1em .25em 1em
@@ -338,13 +337,13 @@ nav
 					-ms-transition all .8s ease
 
 	.selected
-		border-bottom 5px solid color1
+		border-bottom 5px solid maincolor
 
 //VISTA 3
 @media (min-width: 1165px)
 	header 
 		overflow hidden
-		background-color color1
+		background-color maincolor
 		height 100px
 		max-height 100px
 		#hgroup
@@ -358,7 +357,7 @@ nav
 				margin 0
 				padding 0 
 			p
-				color textob
+				color #EEE
 				display inline-block
 				font-family muli
 				font-size 18pt

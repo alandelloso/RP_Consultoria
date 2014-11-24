@@ -1,10 +1,14 @@
+//Colores
+lightcolor = #FF8B63
+maincolor = #FF9800
+darkcolor = #EF6C00 
+darkestcolor = #E65100
+breakcolor = #F50057
+darkbreakcolor = #C51162
+
 //Variables
 bodybg = #EEE
-color1 = #F29700
 color2 = #D98700
-color3 = #B26F00
-color4 = #734800
-color5 = #332000
 facebook = #3B5999
 gplus = #BC2D1D
 linkedin = #2A497F
@@ -16,20 +20,25 @@ twitter = #1AB2E8
 //Vistas
 section
 	text-align center
+	h1 
+		text-align left
+
 #post-volunt
-	background color1
-	border solid 2px color3
-	border-radius 10px
+	background breakcolor
+	border none
+	color bodybg
 	display inline-block
 	height 70px
 	transition all .5s ease-in
 	&:hover
-		background color2
+		background darkbreakcolor
+	&:focus
+		outline 0
 		
 #postulacion-voluntaria
 	display none
 	form
-		background rgba(237, 167, 76, 0.8)
+		background darkestcolor
 		color textow
 		display block
 		margin .5em .3em
@@ -44,9 +53,13 @@ section
 			margin .5em 0
 			height 40px
 			width 300px
-			border solid 2px #B26F00
+			border none
 			color #EEE
 			padding-left .3em
+			transition all .5s ease
+			&:focus
+				outline 0	
+				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
 		::-webkit-input-placeholder
 			color #EEE
 			padding-left .3em
@@ -59,18 +72,18 @@ section
 			max-width 300px
 			max-height 40px
 			background #FF9933
-			border solid 2px #B26F00
+			border none
 			color #EEE
 		label
-			color color3
+			color bodybg
 			font-weight bold
 			font-style italic
 		h2
 			margin-bottom .5em
-			color color3
+			color bodybg
 			font-size 40px
 		span
-			color color4
+			color darkestcolor
 			font-weight bold
 		.post-file
 			height 40px
@@ -79,40 +92,43 @@ section
 			&::before
 				content 'Cargar CV'
 				display inline-block
-				background #B26F00
-				color #EEE
+				background darkcolor
+				color bodybg
 				padding .65em 1em
 				white-space nowrap
 				cursor pointer
 				font-weight 700
 				transition all .5s ease-in
 			&:hover::before
-				background color2
+				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
 		.post-enviar
-			background color1
-			border solid 2px color3
-			border-radius 10px
+			background breakcolor
+			border none
+			color bodybg
 			height 50px
 			margin-bottom .5em
 			transition all .5s ease
 			&:hover
-				background color2
+				background darkbreakcolor
 	
 .impar
 	display none
 
 .new-job
-	background #EDDCC7
+	background maincolor
 	margin 1em .3em
 	max-width 545px
 	text-align left
+	transition all .5s ease
 	vertical-align top
+	&:hover
+		box-shadow rgba(0,0,0,0.5) 5px 5px 20px
 	.job-button
-		background color1
+		background darkcolor
 		text-align center
 		transition all .5s ease-out
 		&:hover
-			background color2
+			background darkestcolor
 		a 
 			color #EEE
 			display block
@@ -123,14 +139,13 @@ section
 		img
 			width 25px
 	.job-title
-		background color2
-		color color4
-		padding-left .3rem
+		background maincolor
+		color bodybg
+		padding-bottom 1rem
 		h3
 			display block
 			font-size 16pt
 			margin 0
-			padding .5em
 
 .relative
 	position relative
@@ -152,10 +167,6 @@ section
 		form
 			width 1100px
 			display inline-block
-			input[type=text], input[type=email], input[type=number]
-				transition all 1s ease
-				&:focus
-					background color2	
 	
 	.ccontainer
 		max-width 1270px
@@ -177,4 +188,4 @@ section
 			display inline-block
 			vertical-align top
 			a 
-				padding 2em 2.15em
+				padding 3.2em 2.15em
