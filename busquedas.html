@@ -12,7 +12,7 @@
 	<![endif]-->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/plantilla.css">
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/busquedas.css">
 		<link rel="icon" type="image/png" href="img/favicon.png">
 	</head>
 	<body>
@@ -77,8 +77,6 @@
 		<section>
 			<div class="ccontainer bcontainer">
 				<h1 class="main-title">Búsquedas de Trabajo</h1>
-				<!-- FECHA DE ACTUALIZACIÓN -->
-				<p id="lastup">Última Actualización: 15/11/2014</p>	
 				<!-- BOTON POSTULACIÓN VOLUNTARIA	 -->
 				<div class="right">
 					<button type="button" id="post-volunt">¡Quiero Integrar Su Base de Datos!</button>
@@ -88,27 +86,16 @@
 				<article id="postulacion-voluntaria">
 					<form action="php/post-volunt.php" method="POST" enctype="multipart/form-data" name="post-volunt">
 						<h2>Postulación Voluntaria</h2><br>
-						<div class="post-nombre">
-							<label for="first_name">Nombre</label><span>*</span><br>
-							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-						</div>
-						<div class="post-apellido">
-							<label for="last_name">Apellido</label><span>*</span><br>
-							<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-						</div>
-						<div class="post-mail">
-							<label for="email">E-mail</label><span>*</span><br>
-							<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-						</div>
-						<div class="post-categoria">
-							<label for="email">Profesión</label><span>*</span><br>
+							<input type="text" name="first_name" placeholder="Ingrese su Nombre" required><br>
+							<input type="text" name="last_name" placeholder="Ingrese su Apellido" required><br>
+							<input type="email" name="mail" placeholder="Ingrese su E-mail" required><br>
 							<input type="text" name="categoria" placeholder="Ingrese su Profesión" required>
-						</div><br><br>
+							<br><br>
 						<div class="post-cv">
-							<label for="cv">Curriculum</label><span>*</span><br>
+							<label for="cv">Cargue su CV</label><br>
 							<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
 							<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-						</div><br>
+							<br>
 						<input type="submit" name="submit" value="Postularme" class="post-enviar">
 					</form>	
 				</article>
@@ -116,286 +103,110 @@
 				<!-- FIN POSTULACIÓN VOLUNTARIA -->
 
 				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
-						<h3>Desarrollador Sénior</h3>
+				<article class="new-job">
+					<div class="job-title">
+						<h3>Desarrollador Senior</h3>
 					</div>
-					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
-					<p>El candidato ideal es un apasionado de la tecnología, tiene experiencia en desarrollo de Software, ama aprender, es detallista, y disfruta de trabajar en un ambiente de equipo usando una variedad de tecnologías ...<a class="leermas" href="busqueda/desarrollador-senior">Leer+</a> </p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="abierta">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
+					<div class="relative">
+						<div class="job-info">
+							<div class="job-country">
+								<img src="img/Argentina.png" alt="Argentina Flag">
+								<span>Argentina</span>
+							</div>
+							<p>23/11/2014 - Tiempo Completo - Capital Federal</p>
 						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/desarrollador-senior" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/desarrollador-senior" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/desarrollador-senior" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Desarrollador Senior">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>				
+						<div class="job-button">
+							<a href="busqueda/desarrollador-senior">Ver Empleo</a>
 						</div>
 					</div>
 				</article>
-				<!-- FIN BUSQUEDA -->
+				<!-- FIN BÚSQUEDA -->
 
 				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
+				<article class="new-job">
+					<div class="job-title">
 						<h3>Asistente de Facturación</h3>
 					</div>
-					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
-					<p>Estamos en la Búsqueda de un Asistente de Facturación, créditos y cobranzas para  una importante empresa.Serán sus principales responsabilidades efectuar las facturaciones, realizar el seguimiento de cobranzas...<a class="leermas" href="busqueda/asistente-de-facturacion">Leer+</a> </p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="abierta">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
+					<div class="relative">
+						<div class="job-info">
+							<div class="job-country">
+								<img src="img/Argentina.png" alt="Argentina Flag">
+								<span>Argentina</span>
+							</div>
+							<p>23/11/2014 - Tiempo Completo - Capital Federal</p>
 						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/asistente-de-facturacion" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/asistente-de-facturacion" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/asistente-de-facturacion" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Asistente de Facturación">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>				
+						<div class="job-button">
+							<a href="busqueda/asistente-de-facturacion">Ver Empleo</a>
 						</div>
 					</div>
 				</article>
-				<!-- FIN BUSQUEDA -->
+				<!-- FIN BÚSQUEDA -->
 
 				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
-						<h3>Ejecutivo Comercial, Con Portugués</h3>
+				<article class="new-job">
+					<div class="job-title">
+						<h3>Ejecutivo Comercial</h3>
 					</div>
-					<div class="b-pais"><img src="img/Argentina.png"><span>Argentina</span></div>
-					<p>Empresa Agroindustrial consolidada y de rápido crecimiento, seleccionara  para su equipo comercial del Departamento de Portugués, un asesor de post venta. Buscamos una persona que esté familiarizada...<a class="leermas" href="busqueda/ejecutivo-comercial">Leer+</a> </p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="abierta">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
+					<div class="relative">
+						<div class="job-info">
+							<div class="job-country">
+								<img src="img/Argentina.png" alt="Argentina Flag">
+								<span>Argentina</span>
+							</div>
+							<p>23/11/2014 - Tiempo Completo - Capital Federal</p>
 						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/ejecutivo-comercial" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/ejecutivo-comercial" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/ejecutivo-comercial" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Ejecutivo Comercial">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>				
+						<div class="job-button">
+							<a href="busqueda/ejecutivo-comercial">Ver Empleo</a>
 						</div>
 					</div>
 				</article>
-				<!-- FIN BUSQUEDA -->
+				<!-- FIN BÚSQUEDA -->
 
 				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
-						<h3>Ing. Júnior Pre-venta/Postventa</h3>
+				<article class="new-job">
+					<div class="job-title">
+						<h3>Ing. Júnior Preventa/Postventa</h3>
 					</div>
-					<div class="b-pais"><img src="img/Chile.png"><span>Chile</span></div>
-					<p>Estamos en la búsqueda de un estudiante de  Ing. Electrónico/ telecomunicaciones. Es necesario que sea una persona con clara orientación hacia el cliente y al trabajo en equipos interdisciplinarios;  que tenga muy buen trato personal...<a class="leermas" href="busqueda/ingeniero-junior-preventa-postventa-chile">Leer+</a> </p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="abierta">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
+					<div class="relative">
+						<div class="job-info">
+							<div class="job-country">
+								<img src="img/Chile.png" alt="Chile Flag">
+								<span>Chile</span>
+							</div>
+							<p>23/11/2014 - Tiempo Completo - Santiago</p>
 						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/ingeniero-junior-preventa-postventa-chile" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/ingeniero-junior-preventa-postventa-chile" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/ingeniero-junior-preventa-postventa-chile" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Ing. Jr. Pre/Postventa Chile">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>				
+						<div class="job-button">
+							<a href="busqueda/ingeniero-junior-preventa-postventa-chile">Ver Empleo</a>
 						</div>
 					</div>
 				</article>
-				<!-- FIN BUSQUEDA -->
+				<!-- FIN BÚSQUEDA -->
 
 				<!-- INICIO BÚSQUEDA -->
-				<article class="busqueda-new">
-					<div class="busqueda-title">
+				<article class="new-job">
+					<div class="job-title">
 						<h3>Asistente Administrativa</h3>
 					</div>
-					<div class="b-pais"><img src="img/Chile.png"><span>Chile</span></div>
-					<p>Estamos en la búsqueda de una Administrativa, para el departamento comercial. Entre sus tareas se encuentran la asistencia a los Ejecutivos de negoción de la compañía, en la administración de la documentación...<a class="leermas" href="busqueda/asistente-administrativa-chile">Leer+</a> </p>
-					<div class="busqueda-botones">
-						<img src="img/cerrada.png" style="width: 200px;" class="abierta">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
+					<div class="relative">
+						<div class="job-info">
+							<div class="job-country">
+								<img src="img/Chile.png" alt="Chile Flag">
+								<span>Chile</span>
+							</div>
+							<p>23/11/2014 - Tiempo Completo - Santiago</p>
 						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
-						<div class="busquedas-social bs hide">
-							<ul>
-								<li class="b-facebook" ><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rpconsultoria.com.ar/busqueda/asistente-administrativa-chile" target=_blank class="icon-facebook"></a></li>
-								<li class="b-twitter"><a href="http://twitter.com/home?status= http://www.rpconsultoria.com.ar/busqueda/asistente-administrativa-chile" target=_blank class="icon-twitter"></a></li>
-								<li class="b-gplus"><a href="https://plus.google.com/share?url=http://www.rpconsultoria.com.ar/busqueda/asistente-administrativa-chile" target=_blank class="icon-google-plus"></a></li>
-							</ul>
-						</div>
-						<div class="busquedas-postularme bp hide">
-							<form action="php/busqueda.php" method="POST" enctype="multipart/form-data">
-								<div class="post-nombre">
-									<label for="first_name">Nombre</label><span>*</span><br>
-									<input type="text" name="first_name" placeholder="Ingrese su Nombre" required>
-								</div>
-								<div class="post-apellido">
-									<label for="last_name">Apellido</label><span>*</span><br>
-									<input type="text" name="last_name" placeholder="Ingrese su Apellido" required>
-								</div>
-								<div class="post-mail">
-									<label for="email">E-mail</label><span>*</span><br>
-									<input type="email" name="mail" placeholder="Ingrese su E-mail" required>
-								</div>
-								<div class="post-remuneracion">
-									<label for="remuneracion">Remuneración Bruta Pretendida</label><span>*</span><br>
-									<input type="number" name="remuneracion" placeholder="Remuneración" required min="1000" max="20000">
-								</div><br>
-								<div class="post-cv">
-									<label for="cv">Curriculum</label><span>*</span><br>
-									<input type="file" name="cv" accept=".pdf, doc, .docx" class="post-file" required>
-									<input type="hidden" name="MAX_FILE_SIZE" value="20000">
-								</div>
-								<input type="hidden" name="title" value="Asistente Administrativa Chile">
-								<input type="submit" name="submit" value="Postularme" class="post-enviar">
-							</form>				
+						<div class="job-button">
+							<a href="busqueda/asistente-administrativa-chile">Ver Empleo</a>
 						</div>
 					</div>
 				</article>
-				<!-- FIN BUSQUEDA -->
-				
+				<!-- FIN BÚSQUEDA -->
+
 				<!-- IMPAR -->
-				<article class="busqueda-new impar">
-					<div class="busqueda-title">
-						<p>lorem Ipsum Dolor</p>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, eius, cumque quasi voluptas iure illo rem ab unde possimus voluptatibus nobis architecto perspiciatis. Enim, quae mollitia numquam delectus alias recusandae.</p>
-					<div class="busqueda-botones">
-						<div class="boton sb">
-							<a style="cursor: pointer;">Sugerir</a>
-						</div>
-						<div class="boton pb">
-							<a style="cursor: pointer;">Postularme</a>
-						</div>
+				<article class="new-job impar">
 					</div>
 				</article>
-				<!-- FIN IMPAR -->
+				<!-- IMPAR -->
 			</div>
 		</section>
 		<br>
