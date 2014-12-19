@@ -51,6 +51,10 @@ RewriteRule ^noticia/aumento-sueldo-minimo-personal-domestico?$ sections/noticia
 
 RewriteRule ^noticia/confeccion-online-de-declaraciones-juradas?$ sections/noticia/confeccion-online-de-declaraciones-juradas.html
 
+RewriteRule ^noticia/impuesto-a-las-ganancias-2-sac-2014?$ sections/noticia/impuesto-a-las-ganancias-2-sac-2014.html
+
+
+
 
 
 
