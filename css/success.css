@@ -3,18 +3,18 @@ section {
 }
 
 .success {
-	background: rgba(18,189,26,0.5);
-	border-radius: 20px;
-	border: solid 3px #18bd26;
+	background: #7ADB7F;
 	color: #158f1f;
-	display: inline-block;
-	margin: 2em 1em;
 	height: 100px;
-	max-width: 1000px;
+	padding: 7em;
 	text-align: center;
 }
 
 .success h1 {
 	color: #10851a;
 	margin: 0px;
+}
+
+.success img {
+	width: 100px;
 }
