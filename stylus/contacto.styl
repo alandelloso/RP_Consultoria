@@ -1,10 +1,11 @@
 //Variables
 bodybg = #EEE
-color1 = #F29700
-color2 = #D98700
-color3 = #B26F00
-color4 = #734800
-color5 = #332000
+lightcolor = #FF8B63
+maincolor = #FF9800
+darkcolor = #EF6C00 
+darkestcolor = #E65100
+breakcolor = #F50057
+darkbreakcolor = #C51162
 facebook = #3B5999
 gplus = #BC2D1D
 linkedin = #2A497F
@@ -20,41 +21,111 @@ section
 	h1
 		text-align left
     
-#afip
-	padding-left 25%
-
 #map-canvas
 	width 99%
 	height 300px
 
+#postulacion-voluntaria
+	form
+		background darkestcolor
+		color textow
+		display block
+		margin .5em .3em
+		overflow hidden
+		padding .3em
+		text-align center
+		transition all 1s ease
+		input 
+			display inline-block
+		input[type=text], input[type=email], input[type=number]
+			background #FF9933
+			margin .5em 0
+			height 40px
+			width 300px
+			border none
+			color #EEE
+			padding-left .3em
+			transition all .5s ease
+			&:focus
+				outline 0	
+				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
+		::-webkit-input-placeholder
+			color #EEE
+			padding-left .3em
+		:-moz-placeholder
+			color #EEE
+			padding-left .3em
+		input[type=file]
+			// padding .5em .2em
+			margin .5em 0 1em 0
+			max-width 300px
+			max-height 40px
+			background #FF9933
+			border none
+			color #EEE
+		label
+			color bodybg
+			font-weight bold
+			font-style italic
+		h2
+			color bodybg
+			font-size 40px
+			margin-bottom .5em
+		span
+			color darkestcolor
+			font-weight bold
+		.post-file
+			height 40px
+			&::-webkit-file-upload-button
+				visibility hidden
+			&::before
+				content 'Cargar CV'
+				display inline-block
+				background darkcolor
+				color bodybg
+				padding .65em 1em
+				white-space nowrap
+				cursor pointer
+				font-weight 700
+				transition all .5s ease-in
+			&:hover::before
+				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
+		.post-enviar
+			background breakcolor
+			border none
+			color bodybg
+			height 50px
+			margin-bottom .5em
+			transition all .5s ease
+			&:hover
+				background darkbreakcolor
+
 #tarjeta-contacto
-	background #eddcc7
-	border-radius 10px
-	color textow
-	padding 0.3em
+	background darkcolor
+	color bodybg
+	padding .3em
 	div
-		text-align left
+		text-align center
 	a 
-		color color3
+		color bodybg
+		text-decoration none
+		font-weight bold
 
 #transportes
 	max-width 580px
 	padding-top 1em
 	.transporte-title
 		text-align left
-		background #eddcc7
+		background maincolor
 		padding-left 1em
-		border-radius 5px 5px 0 0 
 		h2
-			text-shadow color4 1px 1px 0
+			color bodybg
 			display inline-block
 			margin 0
-	#subtes, #colectivos
-		border-radius 8px
 	.transporte-medios
-		border-radius 0 0 5px 5px
-		background #f0af84
+		background darkcolor
 		p 
+			color bodybg
 			display inline-block
 
 @media (min-width: 625px)
@@ -66,8 +137,11 @@ section
 		display inline-block
 		width 300px
 		margin .3em 0
-		border-radius 15px
-		border solid 2px color3
+		
+	#postulacion-voluntaria
+		display inline-block
+		form
+			width 580px
 
 	#tarjeta-contacto
 		max-width 580px
@@ -86,8 +160,13 @@ section
 
 @media (min-width: 1165px)
 
+	#postulacion-voluntaria
+		form
+			width 1041px
+
 	#transportes
 		width 450px
 		vertical-align top
 		padding-left 1em
 		padding-top 0
+	
