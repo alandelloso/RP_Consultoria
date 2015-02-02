@@ -53,6 +53,8 @@ RewriteRule ^noticia/confeccion-online-de-declaraciones-juradas?$ sections/notic
 
 RewriteRule ^noticia/impuesto-a-las-ganancias-2-sac-2014?$ sections/noticia/impuesto-a-las-ganancias-2-sac-2014.html
 
+RewriteRule ^noticia/nueva-fecha-de-pago-del-sac?$ sections/noticia/nueva-fecha-de-pago-del-sac.html
+
 
 
 
