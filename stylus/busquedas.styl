@@ -38,7 +38,7 @@ section
 #postulacion-voluntaria
 	display none
 	form
-		background darkestcolor
+		background darkcolor
 		color textow
 		display block
 		margin .5em .3em
@@ -92,7 +92,7 @@ section
 			&::before
 				content 'Cargar CV'
 				display inline-block
-				background darkcolor
+				background darkestcolor
 				color bodybg
 				padding .65em 1em
 				white-space nowrap
@@ -121,14 +121,12 @@ section
 	text-align left
 	transition all .5s ease
 	vertical-align top
-	&:hover
-		box-shadow rgba(0,0,0,0.5) 5px 5px 20px
 	.job-button
 		background darkcolor
 		text-align center
-		transition all .5s ease-out
+		transition all .2s ease-out
 		&:hover
-			background darkestcolor
+			box-shadow rgba(0,0,0,0.5) 5px 5px 10px
 		a 
 			color #EEE
 			display block

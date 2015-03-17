@@ -1,5 +1,11 @@
 //Variables
 bodybg = #EEE
+lightcolor = #FF8B63
+maincolor = #FF9800
+darkcolor = #EF6C00 
+darkestcolor = #E65100
+breakcolor = #F50057
+darkbreakcolor = #C51162
 color1 = #F29700
 color2 = #D98700
 color3 = #B26F00
@@ -15,26 +21,32 @@ twitter = #1AB2E8
 
 //VISTA
 form
-	background rgba(237, 167, 76, 0.8)
-	border-radius 10px
+	background darkcolor
 	color textow
-	max-width 400px
+	display block
+	margin .5em .3em
 	overflow hidden
-	text-align center
 	padding .3em
+	text-align center
 	transition all 1s ease
+	input 
+		display inline-block
 	input[type=text], input[type=email], input[type=number]
 		background #FF9933
 		margin .5em 0
 		height 40px
 		width 300px
-		border solid 2px #B26F00
+		border none
 		color #EEE
 		padding-left .3em
+		transition all .5s ease
+		&:focus
+			outline 0	
+			box-shadow rgba(0,0,0,0.5) 5px 5px 20px
 	::-webkit-input-placeholder
 		color #EEE
 		padding-left .3em
-	::-moz-placeholder
+	:-moz-placeholder
 		color #EEE
 		padding-left .3em
 	input[type=file]
@@ -43,66 +55,102 @@ form
 		max-width 300px
 		max-height 40px
 		background #FF9933
-		border solid 2px #B26F00
+		border none
 		color #EEE
 	label
-		color color3
+		color bodybg
 		font-weight bold
 		font-style italic
+		display block
 	h2
 		margin-bottom .5em
-		color color3
+		color bodybg
 		font-size 40px
 	span
-		color color4
+		color darkestcolor
 		font-weight bold
 	.post-file
 		height 40px
-		
 		&::-webkit-file-upload-button
 			visibility hidden
 		&::before
+			background darkestcolor
+			color bodybg
 			content 'Cargar CV'
-			display inline-block
-			background #B26F00
-			color #EEE
-			padding .65em 1em
-			white-space nowrap
 			cursor pointer
+			display inline-block
 			font-weight 700
+			padding .65em 1em
 			transition all .5s ease-in
+			white-space nowrap
 		&:hover::before
-			background color2
-
-.busqueda-activa
-	display none
+			box-shadow rgba(0,0,0,0.5) 5px 5px 20px
+	.post-enviar
+		background breakcolor
+		border none
+		color bodybg
+		height 50px
+		margin-bottom .5em
+		transition all .5s ease
+		&:hover
+			background darkbreakcolor
 
 .center-me
 	text-align center
 
 .excluyente
 	font-weight bold
-	color color4
-
-.left-side
+	color darkbreakcolor
+	
+.info
+	background-color #222
+	max-width 250px
+	padding .3em
+	border-radius 20px 0 20px 0
+	h2
+		margin-bottom .5em
+	h4
+		color darkcolor
+		margin 0
 	p
-		max-width 50em
+		color breakcolor
+		margin 0
+	.info__pais
+		img
+			border-radius 100%
+			display inline-block
+			margin .5em 0 0 .5em
+			width 40px
+		.group
+			display inline-block
+			margin-left .5em
+			margin-top .5em
+			vertical-align top
+	.info__modalidad
+		margin 1em 0 .5em 0
+		img
+			border-radius 100%
+			display inline-block
+			margin .5em 0 0 .5em
+			width 40px
+		h4 
+			display inline-block
+			margin-left .5em
+			margin-top 1.2em
+			vertical-align top
+			
+.left-side
+	text-align left
+	p
 		text-align justify
+		line-height 150%
 	a 
 		color color1
 	ul
 		li 
+			line-height 180%
 			max-width 50em
 			text-align justify
-.post-enviar
-	background color1
-	border solid 2px color3
-	border-radius 10px
-	height 50px
-	margin-bottom .5em
-	transition all .5s ease
-	&:hover
-		background color2
 
 .referencia
 	font-weight bold
@@ -114,32 +162,23 @@ form
 	overflow hidden
 
 @media (min-width: 500px)
-	form
-		display inline-block
 
 	.left-side
 		background #FFF
-		box-shadow #DDD 3px 3px
-		padding .3em
+		padding .5em
 		margin .5em 0 .3em 0
 		h1
 			margin-top .3em
+			text-align left
 
-@media (min-width: 1200px)
-	.busqueda-activa
+@media (min-width: 1165px)
+	form
+		width 1100px
+		max-width 1100px
 		display inline-block
-		margin-left 100px 
-		margin-top 100px 
-		vertical-align top
-		width 200px
-
-	.left-side
-		display inline-block
-
-	.post-mail
-		padding-top .5em
 		
-	input[type=text], input[type=email], input[type=number]
-		transition all 1s ease
-		&:focus
-			background color2
+	.left-side
+		width 1100px
+		max-width 1100px
+		display inline-block
+		

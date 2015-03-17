@@ -11,20 +11,13 @@ RewriteRule ^contacto?$ contacto.html
 RewriteRule ^compatibilidad?$ legacy.html
 
 #Busquedas
-RewriteRule ^busqueda/community-manager?$ sections/busqueda/comunitym.html
-RewriteRule ^busqueda/ingeniero-jr-de-operaciones?$ sections/busqueda/ingjunior.html
-RewriteRule ^busqueda/office-manager?$ sections/busqueda/officemanager.html
-RewriteRule ^busqueda/asistente-de-facturacion?$ sections/busqueda/asistfacturacion.html
-RewriteRule ^busqueda/asistente-contable?$ sections/busqueda/asistcontable.html
-RewriteRule ^busqueda/ingeniero-de-desarrollo-electronico?$ sections/busqueda/ingdeselec.html
-RewriteRule ^busqueda/responsable-de-compras?$ sections/busqueda/responsable-de-compras.html
-RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
 RewriteRule ^busqueda/desarrollador-senior?$ sections/busqueda/desarrollador-senior.html
-RewriteRule ^busqueda/ingeniero-junior-preventa-postventa-chile?$ sections/busqueda/ingeniero-junior-preventa-postventa-chile.html
 RewriteRule ^busqueda/asistente-administrativa-chile?$ sections/busqueda/asistente-administrativa-chile.html
-
-#Peru
-RewriteRule ^busqueda/recepcionista-administrativa?$ sections/busqueda/recepcionista-administrativa.html
+RewriteRule ^busqueda/personal-stock-deposito?$ sections/busqueda/personal-stock-deposito.html
+RewriteRule ^busqueda/ejecutivo-de-negocios?$ sections/busqueda/ejecutivo-de-negocios.html
+RewriteRule ^busqueda/ingeniero-electronico-jr?$ sections/busqueda/ingeniero-electronico-jr.html
+RewriteRule ^busqueda/analista-de-sistemas?$ sections/busqueda/analista-de-sistemas.html
+RewriteRule ^busqueda/pasantia-cs-economicas?$ sections/busqueda/pasantia-cs-economicas.html
 
 
 
