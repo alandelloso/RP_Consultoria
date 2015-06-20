@@ -12,12 +12,13 @@ RewriteRule ^compatibilidad?$ legacy.html
 
 #Busquedas
 RewriteRule ^busqueda/desarrollador-senior?$ sections/busqueda/desarrollador-senior.html
-RewriteRule ^busqueda/asistente-administrativa-chile?$ sections/busqueda/asistente-administrativa-chile.html
-RewriteRule ^busqueda/personal-stock-deposito?$ sections/busqueda/personal-stock-deposito.html
-RewriteRule ^busqueda/ejecutivo-de-negocios?$ sections/busqueda/ejecutivo-de-negocios.html
-RewriteRule ^busqueda/ingeniero-electronico-jr?$ sections/busqueda/ingeniero-electronico-jr.html
-RewriteRule ^busqueda/analista-de-sistemas?$ sections/busqueda/analista-de-sistemas.html
-RewriteRule ^busqueda/pasantia-cs-economicas?$ sections/busqueda/pasantia-cs-economicas.html
+RewriteRule ^busqueda/analista-creditos-y-cobranzas?$ sections/busqueda/analista-creditos-y-cobranzas.html
+RewriteRule ^busqueda/data-entry?$ sections/busqueda/data-entry.html
+RewriteRule ^busqueda/ingeniero-preventa?$ sections/busqueda/ingeniero-preventa.html
+RewriteRule ^busqueda/responsable-de-compras-sr?$ sections/busqueda/responsable-de-compras-sr.html
+RewriteRule ^busqueda/community-manager?$ sections/busqueda/community-manager.html
+RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
+
 
 
 
