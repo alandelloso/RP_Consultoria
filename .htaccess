@@ -6,7 +6,6 @@ RewriteEngine on
 RewriteRule ^inicio?$ index.html
 RewriteRule ^asesoramiento?$ asesoramiento.html
 RewriteRule ^busquedas?$ busquedas.html
-RewriteRule ^noticias?$ noticias.html
 RewriteRule ^contacto?$ contacto.html
 RewriteRule ^compatibilidad?$ legacy.html
 
@@ -20,40 +19,6 @@ RewriteRule ^busqueda/community-manager?$ sections/busqueda/community-manager.ht
 RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
 RewriteRule ^busqueda/coordinador-de-ventas-peru?$ sections/busqueda/coordinador-de-ventas-peru.html
 RewriteRule ^busqueda/ejecutivo-de-cuentas-corporativas?$ sections/busqueda/ejecutivo-de-cuentas-corporativas.html
-
-
-
-#Noticias
-
-RewriteRule ^noticia/recursos-de-la-seguridad-social?$ sections/noticia/recursos-de-la-seguridad-social.html
-
-RewriteRule ^noticia/resolucion-general-3653?$ sections/noticia/resolucion-afip-3653.html
-
-RewriteRule ^noticia/pasante-en-situacion-de-embarazo?$ sections/noticia/pasante-en-situacion-de-embarazo.html
-
-RewriteRule ^noticia/liquidacion-de-haberes?$ sections/noticia/liquidhaber.html
-
-RewriteRule ^noticia/pago-a-empleados-de-comercio?$ sections/noticia/pago-a-empleados-de-comercio.html
-
-RewriteRule ^noticia/incremento-del-salario-minimo-vital-y-movil?$ sections/noticia/incremento-del-salario-minimo-vital-y-movil.html
-
-RewriteRule ^noticia/aumento-aportes-mensuales-autonomos?$ sections/noticia/aumento-aportes-mensuales-autonomos.html
-
-RewriteRule ^noticia/regularizacion-de-deuda?$ sections/noticia/regularizacion-de-deuda.html
-
-RewriteRule ^noticia/aumento-sueldo-minimo-personal-domestico?$ sections/noticia/aumento-sueldo-minimo-personal-domestico.html
-
-RewriteRule ^noticia/confeccion-online-de-declaraciones-juradas?$ sections/noticia/confeccion-online-de-declaraciones-juradas.html
-
-RewriteRule ^noticia/impuesto-a-las-ganancias-2-sac-2014?$ sections/noticia/impuesto-a-las-ganancias-2-sac-2014.html
-
-RewriteRule ^noticia/nueva-fecha-de-pago-del-sac?$ sections/noticia/nueva-fecha-de-pago-del-sac.html
-
-
-
-
-
-
 
 
 #Asesoramiento
