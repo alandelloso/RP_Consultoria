@@ -318,23 +318,19 @@ nav
 			margin 0
 			padding 0
 			li
-				border-right 1px solid #FFF
 				display inline-block
 				margin 0
 				padding 0
 				&:hover a
 					border-bottom 5px solid maincolor
-					
+					transition all .2s ease	
 				a
 					border-bottom 5px solid darkestcolor
 					color #FFF
 					display block
 					padding .65em 1em .25em 1em
 					text-decoration none
-					-webkit-transition all .8s ease
-					-moz-transition all .8s ease
-					-o-transition all .8s ease
-					-ms-transition all .8s ease
+					transition all .5s ease
 
 	.selected
 		border-bottom 5px solid maincolor
@@ -386,8 +382,6 @@ nav
 	nav
 		ul
 			li
-				&:first-child
-					border-left 1px solid #FFF
 				a
 					padding .65em 1em .26em 1em
 
@@ -396,46 +390,38 @@ nav
 
 	#facebook 
 		background facebook
-		border solid 3px #0D2E70
-		border-radius 10px
+		border-radius 100%
 		margin 0
 		transition all .5s ease-in
+		box-shadow rgba(0,0,0,0.5) 3px 3px 5px
 		a 
 			color white
 			cursor pointer
+			font-size 20pt
 			display block
-			padding .6em
+			padding .5em
 			text-decoration none
 		&:hover
 			background #4F79B7
+			box-shadow rgba(0,0,0,0.5) 4px 4px 7px
+			transition all .2s ease-in
 
 	#gplus
 		background gplus
-		border solid 3px #961212
-		border-radius 10px
+		border-radius 100%
 		transition all .5s ease-in
+		box-shadow rgba(0,0,0,0.5) 3px 3px 5px
 		a 
 			color white
 			cursor pointer
 			display block
-			padding .6em
+			font-size 20pt
 			text-decoration none
+			padding .5em
 		&:hover
 			background #EF392B
-
-	#linkedin
-		background linkedin
-		border solid 3px #06214C
-		border-radius 10px
-		transition all .5s ease-in
-		a 
-			color white
-			cursor pointer
-			display block
-			padding .6em
-			text-decoration none
-		&:hover
-			background #3A64A3
+			box-shadow rgba(0,0,0,0.5) 4px 4px 7px
+			transition all .2s ease-in
 
 	#logo
 		display inline-block
@@ -445,18 +431,21 @@ nav
 
 	#twitter 
 		background twitter
-		border solid 3px #0D7F99
-		border-radius 10px
+		border-radius 100%
 		transition all .5s ease-in
+		box-shadow rgba(0,0,0,0.5) 3px 3px 5px
 		a 
 			color white
 			cursor pointer
+			font-size 20pt
 			display block
-			padding .6em
+			padding .5em
 			text-decoration none
 		&:hover
 			background #2DCEF9
-
+			box-shadow rgba(0,0,0,0.5) 4px 4px 7px
+			transition all .2s ease-in
+		
 	.container
 		position: relative;
 		background: inherit;

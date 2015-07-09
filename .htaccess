@@ -19,7 +19,7 @@ RewriteRule ^busqueda/responsable-de-compras-sr?$ sections/busqueda/responsable-
 RewriteRule ^busqueda/community-manager?$ sections/busqueda/community-manager.html
 RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
 RewriteRule ^busqueda/coordinador-de-ventas-peru?$ sections/busqueda/coordinador-de-ventas-peru.html
-
+RewriteRule ^busqueda/ejecutivo-de-cuentas-corporativas?$ sections/busqueda/ejecutivo-de-cuentas-corporativas.html
 
 
 

@@ -34,16 +34,6 @@
 
    <url>
 
-      <loc>http://www.rpconsultoria.com.ar/noticias/</loc>
-
-      <changefreq>weekly</changefreq>
-
-      <priority>0.6</priority>
-
-   </url>
-
-   <url>
-
       <loc>http://www.rpconsultoria.com.ar/contacto/</loc>
 
       <changefreq>yearly</changefreq>
