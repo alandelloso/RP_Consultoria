@@ -19,6 +19,10 @@ RewriteRule ^busqueda/community-manager?$ sections/busqueda/community-manager.ht
 RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
 RewriteRule ^busqueda/coordinador-de-ventas-peru?$ sections/busqueda/coordinador-de-ventas-peru.html
 RewriteRule ^busqueda/ejecutivo-de-cuentas-corporativas?$ sections/busqueda/ejecutivo-de-cuentas-corporativas.html
+RewriteRule ^busqueda/administrador-de-redes-senior?$ sections/busqueda/administrador-de-redes-senior.html
+RewriteRule ^busqueda/pasantia-ingenieria-electronica-telecomunicaciones?$ sections/busqueda/pasantia-ingenieria-electronica-telecomunicaciones.html
+RewriteRule ^busqueda/tecnico-de-laboratorio?$ sections/busqueda/tecnico-de-laboratorio.html
+
 
 
 #Asesoramiento
