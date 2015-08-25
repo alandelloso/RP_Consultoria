@@ -22,6 +22,7 @@ RewriteRule ^busqueda/ejecutivo-de-cuentas-corporativas?$ sections/busqueda/ejec
 RewriteRule ^busqueda/administrador-de-redes-senior?$ sections/busqueda/administrador-de-redes-senior.html
 RewriteRule ^busqueda/pasantia-ingenieria-electronica-telecomunicaciones?$ sections/busqueda/pasantia-ingenieria-electronica-telecomunicaciones.html
 RewriteRule ^busqueda/tecnico-de-laboratorio?$ sections/busqueda/tecnico-de-laboratorio.html
+RewriteRule ^busqueda/analista-de-costos?$ sections/busqueda/analista-de-costos.html
 
 
 
