@@ -2,6 +2,7 @@ function initialize() {
   var rpConsultoria = new google.maps.LatLng(-34.6356038,-58.397069999999985);
   var mapOptions = {
     zoom: 16,
+    scrollwheel: false,
     center: rpConsultoria
   }
   var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);

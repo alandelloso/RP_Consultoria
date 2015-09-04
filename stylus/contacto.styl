@@ -22,88 +22,22 @@ section
 		text-align left
     
 #map-canvas
-	width 99%
+	width 100%
 	height 300px
+	border-radius 0 0 5px 5px
 
-#postulacion-voluntaria
-	form
-		background darkcolor
-		color textow
-		display block
-		margin .5em .3em
-		overflow hidden
-		padding .3em
-		text-align center
-		transition all 1s ease
-		input 
-			display inline-block
-		input[type=text], input[type=email], input[type=number]
-			background #FF9933
-			margin .5em 0
-			height 40px
-			width 300px
-			border none
-			color #EEE
-			padding-left .3em
-			transition all .5s ease
-			&:focus
-				outline 0	
-				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
-		::-webkit-input-placeholder
-			color #EEE
-			padding-left .3em
-		:-moz-placeholder
-			color #EEE
-			padding-left .3em
-		input[type=file]
-			// padding .5em .2em
-			margin .5em 0 1em 0
-			max-width 300px
-			max-height 40px
-			background #FF9933
-			border none
-			color #EEE
-		label
-			color bodybg
-			font-weight bold
-			font-style italic
-		h2
-			color bodybg
-			font-size 40px
-			margin-bottom .5em
-		span
-			color darkestcolor
-			font-weight bold
-		.post-file
-			height 40px
-			&::-webkit-file-upload-button
-				visibility hidden
-			&::before
-				content 'Cargar CV'
-				display inline-block
-				background darkestcolor
-				color bodybg
-				padding .65em 1em
-				white-space nowrap
-				cursor pointer
-				font-weight 700
-				transition all .5s ease-in
-			&:hover::before
-				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
-		.post-enviar
-			background breakcolor
-			border none
-			color bodybg
-			height 50px
-			margin-bottom .5em
-			transition all .5s ease
-			&:hover
-				background darkbreakcolor
-
-#tarjeta-contacto
-	background darkcolor
-	color bodybg
-	padding .3em
+.tarjeta-contacto
+	background maincolor
+	color rgba(0,0,0,0.8)
+	box-shadow rgba(0,0,0,0.5) 3px 3px 5px
+	border-radius 5px
+	margin-bottom 1em
+	.tarjeta-contacto__title
+		background-color #222
+		border-radius 5px 5px 0 0
+	.tarjeta-contacto__content
+		font-size 20px
+		padding-bottom .5em
 	div
 		text-align center
 	a 
@@ -111,46 +45,8 @@ section
 		text-decoration none
 		font-weight bold
 
-#transportes
-	max-width 580px
-	padding-top 1em
-	.transporte-title
-		text-align left
-		background maincolor
-		padding-left 1em
-		h2
-			color bodybg
-			display inline-block
-			margin 0
-	.transporte-medios
-		background darkcolor
-		p 
-			color bodybg
-			display inline-block
 
 @media (min-width: 625px)
-	#datos-contacto
-		display inline-block
-		vertical-align top
-
-	#map-canvas
-		display inline-block
-		width 300px
-		margin .3em 0
-		
-	#postulacion-voluntaria
-		display inline-block
-		form
-			width 580px
-
-	#tarjeta-contacto
-		max-width 580px
-		display inline-block
-
-	#transportes
-		display inline-block
-		width 580px
-
 	.ccontainer
 		max-width 1270px
 		padding 0 10px
@@ -159,14 +55,15 @@ section
 
 
 @media (min-width: 1165px)
-
-	#postulacion-voluntaria
-		form
-			width 1041px
-
 	#transportes
-		width 450px
-		vertical-align top
-		padding-left 1em
-		padding-top 0
-	
+		display -webkit-box
+		display -moz-box
+		display -ms-flexbox
+		display -webkit-flex
+		display flex
+		justify-content space-between
+		.tarjeta-contacto
+			width 600px
+			.tarjeta-contacto__content
+				padding 1em
+		
