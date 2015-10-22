@@ -48,6 +48,9 @@ section
 		font-weight bold
 		margin 0 0 10px 5px
 		
+.closedimp
+	visibility hidden
+		
 
 .impar
 	display none
@@ -109,14 +112,17 @@ section
 			
 
 	#cerradas
-		display flex
-		flex-wrap wrap
-		justify-content space-between
-		padding 0 20px 0 78px
+		// display flex
+		// flex-wrap wrap
+		// justify-content space-between
+		// padding 0 20px 0 78px
+		text-align center
 		
 	.closed-job
 		width 545px	
-		margin-right auto
+		// margin-right auto
+		&:nth-child(even)
+			margin-right auto	
 
 	.new-job
 		width 545px
