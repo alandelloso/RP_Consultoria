@@ -13,7 +13,7 @@ facebook = #3B5999
 gplus = #BC2D1D
 linkedin = #2A497F
 muli = 'Muli', sans-serif
-textob = #DDD
+textob = #FFF
 textow = #555
 twitter = #1AB2E8
 
@@ -24,94 +24,31 @@ section
 	h1 
 		text-align left
 
-#post-volunt
-	background breakcolor
-	border none
-	color bodybg
-	display inline-block
-	height 70px
-	transition all .5s ease-in
-	&:hover
-		background darkbreakcolor
-	&:focus
-		outline 0
-		
-#postulacion-voluntaria
-	display none
-	form
-		background darkcolor
-		color textow
+.closed-job
+	background #CCC
+	color textow
+	margin .3em
+	max-width 545px
+	padding-top 5px
+	text-align left
+	h3
+		margin 0 0 10px 5px
+	a 
+		background #555
+		color textob
 		display block
-		margin .5em .3em
-		overflow hidden
-		padding .3em
+		padding 10px
 		text-align center
-		transition all 1s ease
-		input 
-			display inline-block
-		input[type=text], input[type=email], input[type=number]
-			background #FF9933
-			margin .5em 0
-			height 40px
-			width 300px
-			border none
-			color #EEE
-			padding-left .3em
-			transition all .5s ease
-			&:focus
-				outline 0	
-				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
-		::-webkit-input-placeholder
-			color #EEE
-			padding-left .3em
-		:-moz-placeholder
-			color #EEE
-			padding-left .3em
-		input[type=file]
-			// padding .5em .2em
-			margin .5em 0 1em 0
-			max-width 300px
-			max-height 40px
-			background #FF9933
-			border none
-			color #EEE
-		label
-			color bodybg
-			font-weight bold
-			font-style italic
-		h2
-			margin-bottom .5em
-			color bodybg
-			font-size 40px
-		span
-			color darkestcolor
-			font-weight bold
-		.post-file
-			height 40px
-			&::-webkit-file-upload-button
-				visibility hidden
-			&::before
-				content 'Cargar CV'
-				display inline-block
-				background darkestcolor
-				color bodybg
-				padding .65em 1em
-				white-space nowrap
-				cursor pointer
-				font-weight 700
-				transition all .5s ease-in
-			&:hover::before
-				box-shadow rgba(0,0,0,0.5) 5px 5px 20px
-		.post-enviar
-			background breakcolor
-			border none
-			color bodybg
-			height 50px
-			margin-bottom .5em
-			transition all .5s ease
-			&:hover
-				background darkbreakcolor
-	
+		text-decoration none
+		transition all .2s ease-out
+		&:hover
+			box-shadow rgba(0,0,0,0.5) 5px 5px 10px
+	p 
+		color breakcolor
+		font-weight bold
+		margin 0 0 10px 5px
+		
+
 .impar
 	display none
 
@@ -150,23 +87,17 @@ section
 	position relative
 	
 @media (min-width: 575px)
-	.new-job
+	.new-job, .closed-job
 		width 545px
 		display inline-block
 		
 @media (min-width: 845px)
-	.new-job
+	.new-job, .closed-job
 		width 40%
 		&:nth-child(even)
 			margin-right 5%
 
 @media (min-width: 1165px)
-
-	#postulacion-voluntaria
-		form
-			width 1100px
-			display inline-block
-	
 	.ccontainer
 		max-width 1270px
 		padding 0 10px
@@ -175,6 +106,17 @@ section
 		h1
 			margin-left .3em
 			text-align left
+			
+
+	#cerradas
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		padding 0 20px 0 78px
+		
+	.closed-job
+		width 545px	
+		margin-right auto
 
 	.new-job
 		width 545px
