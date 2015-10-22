@@ -26,7 +26,7 @@ RewriteRule ^busqueda/analista-de-costos?$ sections/busqueda/analista-de-costos.
 RewriteRule ^busqueda/project-manager?$ sections/busqueda/project-manager.html
 RewriteRule ^busqueda/programador-java-sr?$ sections/busqueda/programador-java-sr.html
 RewriteRule ^busqueda/responsable-de-tesoreria?$ sections/busqueda/responsable-de-tesoreria.html
-
+RewriteRule ^busqueda/analista-de-control-de-gestion?$ sections/busqueda/analista-de-control-de-gestion.html
 
 
 #Asesoramiento
