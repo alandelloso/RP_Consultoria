@@ -20,81 +20,6 @@ textow = #555
 twitter = #1AB2E8
 
 //VISTA
-form
-	background darkcolor
-	color textow
-	display block
-	margin .5em .3em
-	overflow hidden
-	padding .3em
-	text-align center
-	transition all 1s ease
-	input 
-		display inline-block
-	input[type=text], input[type=email], input[type=number]
-		background #FF9933
-		margin .5em 0
-		height 40px
-		width 300px
-		border none
-		color #EEE
-		padding-left .3em
-		transition all .5s ease
-		&:focus
-			outline 0	
-			box-shadow rgba(0,0,0,0.5) 5px 5px 20px
-	::-webkit-input-placeholder
-		color #EEE
-		padding-left .3em
-	:-moz-placeholder
-		color #EEE
-		padding-left .3em
-	input[type=file]
-		// padding .5em .2em
-		margin .5em 0 1em 0
-		max-width 300px
-		max-height 40px
-		background #FF9933
-		border none
-		color #EEE
-	label
-		color bodybg
-		font-weight bold
-		font-style italic
-		display block
-	h2
-		margin-bottom .5em
-		color bodybg
-		font-size 40px
-	span
-		color darkestcolor
-		font-weight bold
-	.post-file
-		height 40px
-		&::-webkit-file-upload-button
-			visibility hidden
-		&::before
-			background darkestcolor
-			color bodybg
-			content 'Cargar CV'
-			cursor pointer
-			display inline-block
-			font-weight 700
-			padding .65em 1em
-			transition all .5s ease-in
-			white-space nowrap
-		&:hover::before
-			box-shadow rgba(0,0,0,0.5) 5px 5px 20px
-	.post-enviar
-		background breakcolor
-		border none
-		color bodybg
-		height 50px
-		margin-bottom .5em
-		transition all .5s ease
-		&:hover
-			background darkbreakcolor
-
 .center-me
 	text-align center
 
@@ -141,6 +66,7 @@ form
 			
 .left-side
 	text-align left
+	color rgba(0,0,0,0.8)
 	p
 		text-align justify
 		line-height 150%
@@ -162,7 +88,6 @@ form
 	overflow hidden
 
 @media (min-width: 500px)
-
 	.left-side
 		background #FFF
 		padding .5em
@@ -172,11 +97,6 @@ form
 			text-align left
 
 @media (min-width: 1165px)
-	form
-		width 1100px
-		max-width 1100px
-		display inline-block
-		
 	.left-side
 		width 1100px
 		max-width 1100px
