@@ -27,6 +27,8 @@ RewriteRule ^busqueda/project-manager?$ sections/busqueda/project-manager.html
 RewriteRule ^busqueda/programador-java-sr?$ sections/busqueda/programador-java-sr.html
 RewriteRule ^busqueda/responsable-de-tesoreria?$ sections/busqueda/responsable-de-tesoreria.html
 RewriteRule ^busqueda/analista-de-control-de-gestion?$ sections/busqueda/analista-de-control-de-gestion.html
+RewriteRule ^busqueda/customer-success-engineer?$ sections/busqueda/customer-success-engineer.html
+RewriteRule ^busqueda/salesforce-administrator?$ sections/busqueda/salesforce-administrator.html
 
 
 #Asesoramiento
