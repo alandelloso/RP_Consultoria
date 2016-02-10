@@ -32,6 +32,8 @@ RewriteRule ^busqueda/salesforce-administrator?$ sections/busqueda/salesforce-ad
 RewriteRule ^busqueda/analista-programador-sr?$ sections/busqueda/analista-programador-sr.html
 RewriteRule ^busqueda/administrador-de-redes-e-infraestructura?$ sections/busqueda/administrador-de-redes-e-infraestructura.html
 RewriteRule ^busqueda/senior-developer?$ sections/busqueda/senior-developer.html
+RewriteRule ^busqueda/account-manager-chile?$ sections/busqueda/account-manager-chile.html
+RewriteRule ^busqueda/asistente-de-facturacion-peru?$ sections/busqueda/asistente-de-facturacion-peru.html
 
 
 #Asesoramiento
