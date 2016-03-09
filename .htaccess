@@ -4,45 +4,9 @@ RewriteEngine on
 
 #Principales
 RewriteRule ^inicio?$ index.html
-RewriteRule ^asesoramiento?$ asesoramiento.html
-RewriteRule ^busquedas?$ busquedas.html
-RewriteRule ^contacto?$ contacto.html
 RewriteRule ^compatibilidad?$ legacy.html
 
-#Busquedas
-RewriteRule ^busqueda/desarrollador-senior?$ sections/busqueda/desarrollador-senior.html
-RewriteRule ^busqueda/analista-creditos-y-cobranzas?$ sections/busqueda/analista-creditos-y-cobranzas.html
-RewriteRule ^busqueda/data-entry?$ sections/busqueda/data-entry.html
-RewriteRule ^busqueda/ingeniero-preventa?$ sections/busqueda/ingeniero-preventa.html
-RewriteRule ^busqueda/responsable-de-compras-sr?$ sections/busqueda/responsable-de-compras-sr.html
-RewriteRule ^busqueda/community-manager?$ sections/busqueda/community-manager.html
-RewriteRule ^busqueda/ejecutivo-comercial?$ sections/busqueda/ejecutivo-comercial.html
-RewriteRule ^busqueda/coordinador-de-ventas-peru?$ sections/busqueda/coordinador-de-ventas-peru.html
-RewriteRule ^busqueda/ejecutivo-de-cuentas-corporativas?$ sections/busqueda/ejecutivo-de-cuentas-corporativas.html
-RewriteRule ^busqueda/administrador-de-redes-senior?$ sections/busqueda/administrador-de-redes-senior.html
-RewriteRule ^busqueda/pasantia-ingenieria-electronica-telecomunicaciones?$ sections/busqueda/pasantia-ingenieria-electronica-telecomunicaciones.html
-RewriteRule ^busqueda/tecnico-de-laboratorio?$ sections/busqueda/tecnico-de-laboratorio.html
-RewriteRule ^busqueda/analista-de-costos?$ sections/busqueda/analista-de-costos.html
-RewriteRule ^busqueda/project-manager?$ sections/busqueda/project-manager.html
-RewriteRule ^busqueda/programador-java-sr?$ sections/busqueda/programador-java-sr.html
-RewriteRule ^busqueda/responsable-de-tesoreria?$ sections/busqueda/responsable-de-tesoreria.html
-RewriteRule ^busqueda/analista-de-control-de-gestion?$ sections/busqueda/analista-de-control-de-gestion.html
-RewriteRule ^busqueda/developer-success-engineer?$ sections/busqueda/developer-success-engineer.html
-RewriteRule ^busqueda/salesforce-administrator?$ sections/busqueda/salesforce-administrator.html
-RewriteRule ^busqueda/analista-programador-sr?$ sections/busqueda/analista-programador-sr.html
-RewriteRule ^busqueda/administrador-de-redes-e-infraestructura?$ sections/busqueda/administrador-de-redes-e-infraestructura.html
-RewriteRule ^busqueda/senior-developer?$ sections/busqueda/senior-developer.html
-RewriteRule ^busqueda/account-manager-chile?$ sections/busqueda/account-manager-chile.html
-RewriteRule ^busqueda/asistente-de-facturacion-peru?$ sections/busqueda/asistente-de-facturacion-peru.html
-
-
-#Asesoramiento
-RewriteRule ^informacion/recursos-humanos?$ sections/asesoramiento/recursos-humanos.html
-
-#Alertas
-RewriteRule ^success?$ sections/alerts/success.html
-RewriteRule ^success-busquedas?$ sections/alerts/success-busquedas.html
-RewriteRule ^fail?$ sections/alerts/fail.html
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
 #Errores
 ErrorDocument 403 /errores/403.html
