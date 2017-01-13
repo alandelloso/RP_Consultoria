@@ -1,5 +1,5 @@
 //Fuentes
-@import url("http://fonts.googleapis.com/css?family=Muli")
+@import url("https://fonts.googleapis.com/css?family=Roboto")
 //Iconos
 @font-face
   font-family 'icomoon'
@@ -75,23 +75,29 @@ bodybg = #EEE
 facebook = #3B5999
 gplus = #BC2D1D
 linkedin = #2A497F
-muli = 'Muli', sans-serif
+roboto = 'Roboto', sans-serif
 textob = #DDD
 textow = #555
 twitter = #1AB2E8
 //VISTA 1
 //Estilos por TAG
+
+.text-left
+	text-align left
+	
+.no-margin
+	margin 0 !important
+
 body
 	background bodybg
 	color textow
-	font-family muli
+	font-family roboto
 	font-size 16px
 
 footer
-	background darkestcolor
+	background #333
 	color bodybg
-	height 85px
-	max-height 85px
+	padding 2em
 	text-align center
 	span
 		color lightcolor
@@ -101,15 +107,15 @@ footer
 
 h1
 	color darkcolor
-	font-family muli
+	font-family roboto
 
 h2
 	color maincolor
-	font-family muli
+	font-family roboto
 	margin 0
 
 header
-	background maincolor
+	background darkcolor
 	height 50px
 	max-height 50px
 	overflow hidden
@@ -139,7 +145,7 @@ nav
 
 //Estilos por ID
 #mmovile
-	background darkcolor
+	background #333
 	color bodybg
 	height 40px
 	max-height 40px
@@ -153,12 +159,12 @@ nav
 		text-decoration none
 	p
 		display inline-block
-		font-family muli
+		font-family roboto
 		margin .55em 0 .55em -1em
 
 #mnav
 	transition all .5s ease-out
-	background darkcolor
+	background maincolor
 	left -15em
 	min-height 150%
 	min-width 15em
@@ -167,7 +173,7 @@ nav
 	p
 		color bodybg
 		display inline-block
-		font-family muli
+		font-family roboto
 		font-size 30px
 		font-weight bold
 		margin .5em 0 .5em .5em
@@ -205,7 +211,8 @@ nav
 #msocial
 	background darkestcolor
 	color bodybg
-	font-family muli
+	display none
+	font-family roboto
 	height 40px
 	max-height 40px
 	overflow hidden
@@ -263,6 +270,7 @@ nav
 	nav
 		background darkcolor
 		display block
+		box-shadow rgba(0,0,0,0.3) 2px 2px 5px
 		height 40px
 		max-height 40px
 		overflow hidden
@@ -328,6 +336,7 @@ nav
 					border-bottom 5px solid darkestcolor
 					color #FFF
 					display block
+					text-transform uppercase
 					padding .65em 1em .25em 1em
 					text-decoration none
 					transition all .5s ease
@@ -339,7 +348,7 @@ nav
 @media (min-width: 1165px)
 	header 
 		overflow hidden
-		background-color maincolor
+		background-color darkcolor
 		height 100px
 		max-height 100px
 		#hgroup
@@ -348,14 +357,14 @@ nav
 			#h1
 				color #EEE
 				display inline-block
-				font-family muli
+				font-family roboto
 				font-size 36pt 
 				margin 0
 				padding 0 
 			p
 				color #EEE
 				display inline-block
-				font-family muli
+				font-family roboto
 				font-size 18pt
 				margin 0
 				padding 0 
@@ -365,7 +374,7 @@ nav
 			float right
 			p
 				color bodybg
-				font-family muli
+				font-family roboto
 				font-size 13pt
 				margin 0
 				padding 0 
@@ -453,10 +462,6 @@ nav
 		margin: 0 auto;
 		max-width: 1270px;
 		height: 120%;
-		background-image url("../img/mundo.png")
-		background-position 75% top 
-		background-size 390px
-		background-repeat no-repeat
 
 	.navcontainer
 		max-width: 1270px;
