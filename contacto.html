@@ -75,68 +75,84 @@
 		<!--Inicio de Contenido-->
 		<div class="ccontainer cocontainer">
 			<section>
-				<h1>Contacto</h1>
-				<!--CONTACTO POR MAIL-->
-				<article class="tarjeta-contacto">
-					<div class="tarjeta-contacto__title">
-						<h2 class="tarjeta-contacto__title--title">Mail de Contacto</h2>
+			<h1>Contacto</h1>
+			<section class="flex-container-top">
+				<section class="flex-container-left">
+					<!-- INICIO -->
+					<div class="mdc-card mail">
+						<section class="mdc-card__primary">
+							<h1 class="mdc-card__title mdc-card__title--large no-margin">Mail</h1>
+						</section>
+						<section class="mdc-card__supporting-text text-left">
+							<p>consultas@rpconsultoria.com.ar</p>
+						</section>
 					</div>
-					<div class="tarjeta-contacto__content">
-						<p class="tarjeta-contacto__content--mail">consultas@rpconsultoria.com.ar</p>
+					<!-- FIN -->
+
+					<!-- INICIO -->
+					<div class="mdc-card datos">
+						<section class="mdc-card__primary">
+							<h1 class="mdc-card__title mdc-card__title--large no-margin">Datos de Ubicación</h1>
+						</section>
+						<section class="mdc-card__supporting-text text-left">
+							<p>Av. Caseros 2478 1º Piso</p>
+							<p>(+54) 11 4943-5302</p>
+							<p>Lunes a Viernes de 9:00 a 18:00 Hs</p>
+						</section>
 					</div>
-				</article>
-				<!--DATOS GENERALES-->
-				<article class="tarjeta-contacto">
-					<div class="tarjeta-contacto__title">
-						<h2 class="tarjeta-contacto__title--title">Datos de Ubicación</h2>
-					</div>
-					<div class="tarjeta-contacto__content">
-						<p class="tarjeta-contacto__content--address">Av. Caseros 2478 1º Piso</p>
-						<p class="tarjeta-contacto__content--phone"><span class="underlight">(+54) 11</span> 4943-5302</p>
-						<p class="tarjeta-contacto__content--time">Lunes a Viernes de 9:00 a 18:00 Hs</p>
-					</div>
-				</article>
-				<article class="tarjeta-contacto">
-					<div class="tarjeta-contacto__title">
-						<h2 class="tarjeta-contacto__title--title">Mapa</h2>
-					</div>
-						<div id="map-canvas">Loading Map <img src="img/loading-icon.gif" style="height: 30%"></div>
-				</article>
-				<!--TRANSPORTES-->
-				<article id="transportes">
-					<article class="tarjeta-contacto">
-						<div class="tarjeta-contacto__title">
-							<h2 class="tarjeta-contacto__title--title">Colectivos</h2>
-						</div>
-						<div class="tarjeta-contacto__content">
-							<p class="tarjeta-contacto__content--transport">9 - 25 - 50 - 65 - 91 - 95 - 118 - 133 - 150</p>
-						</div>
-					</article>
-					<br>
-					<article class="tarjeta-contacto">
-						<div class="tarjeta-contacto__title">
-							<h2 class="tarjeta-contacto__title--title">Subtes</h2>
-						</div>
-						<div class="tarjeta-contacto__content">
-							<p class="tarjeta-contacto__content--transport">Línea H (Estación Caseros)</p>
-						</div>
-					</article>
-				</article>
-				<!--AFIP-->
-				<a id="afip" href="http://qr.afip.gob.ar/?qr=f8_FOKsk0Bm7nNgsfVb1Xw,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" height="150px"></a>
+					<!-- FIN -->
 				</section>
-				<br>
-			</div>
-			<!--Final de Contenido-->
-			<footer>
-				<p>Av.Caseros 2478</p>
-				<p>Lunes a Viernes de 9:00 a 18:00</p>
-				<p><span>(+54) 11</span> 4943-5302</p>
-			</footer>
-			<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-			<script src="javascript/prefixfree.js"></script>
-			<script src="javascript/menu.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-			<script src="javascript/contacto.js"></script>
-		</body>
-		</html>
+				<section class="flex-container-right mapa">
+					<!-- INICIO -->
+					<div class="mdc-card">
+						<section class="mdc-card__primary">
+							<h1 class="mdc-card__title mdc-card__title--large no-margin">Mapa</h1>
+						</section>
+						<section class="mdc-card__supporting-text text-left">
+							<div id="map-canvas">Loading Map <img src="img/loading-icon.gif" style="height: 30%"></div>
+						</section>
+					</div>
+					<!-- FIN -->
+				</section>
+			</section>	
+			<section class="flex-container-bottom">
+				<!-- INICIO -->
+				<div class="mdc-card colectivos">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large no-margin">Colectivos</h1>
+					</section>
+					<section class="mdc-card__supporting-text text-left">
+						<p>9 - 25 - 50 - 65 - 91 - 95 - 118 - 133 - 150</p>
+					</section>
+				</div>
+				<!-- FIN -->
+
+				<!-- INICIO -->
+				<div class="mdc-card subtes">
+					<section class="mdc-card__primary">
+						<h1 class="mdc-card__title mdc-card__title--large no-margin">Subtes</h1>
+					</section>
+					<section class="mdc-card__supporting-text text-left">
+						<p>Línea H (Estación Caseros)</p>
+					</section>
+				</div>
+				<!-- FIN -->
+			</section>			
+				<a id="afip" href="http://qr.afip.gob.ar/?qr=f8_FOKsk0Bm7nNgsfVb1Xw,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" height="150px"></a>
+				
+			</section>
+			<br>
+		</div>
+		<!--Final de Contenido-->
+		<footer>
+			<p>Av.Caseros 2478</p>
+			<p>Lunes a Viernes de 9:00 a 18:00</p>
+			<p><span>(+54) 11</span> 4943-5302</p>
+		</footer>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="javascript/prefixfree.js"></script>
+		<script src="javascript/menu.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		<script src="javascript/contacto.js"></script>
+	</body>
+	</html>

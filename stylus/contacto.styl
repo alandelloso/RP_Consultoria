@@ -1,3 +1,5 @@
+@import 'mdc-card'
+
 //Variables
 bodybg = #EEE
 lightcolor = #FF8B63
@@ -55,15 +57,36 @@ section
 
 
 @media (min-width: 1165px)
-	#transportes
+	.flex-container-top
+		display -webkit-box
+		display -moz-box
+		display -ms-flexbox
+		display -webkit-flex
+		display flex
+		flex-flow row wrap
+		min-height 0
+		min-width 0
+		justify-content space-around
+		align-items strech
+		.flex-container-left
+			flex-grow 1
+			.mail, .datos
+				height 47.3%
+				vertical-align top
+		.flex-container-right
+			flex-basis 0
+			flex-grow 2
+	
+	.flex-container-bottom
 		display -webkit-box
 		display -moz-box
 		display -ms-flexbox
 		display -webkit-flex
 		display flex
 		justify-content space-between
-		.tarjeta-contacto
-			width 600px
-			.tarjeta-contacto__content
-				padding 1em
+		flex-flow row wrap
+		flex-align baseline
+		.colectivos, .subtes, .afip
+			flex-grow 1
+
 		
