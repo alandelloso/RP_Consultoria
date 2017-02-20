@@ -20,6 +20,16 @@ textob = #FFF
 textow = #555
 twitter = #1AB2E8
 
+flexbox(value)
+  if value == inline-flex
+    display -webkit-inline-flex
+    display -ms-inline-flexbox
+    display inline-flex
+  else if value == flex
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+
 
 //Vistas
 section
@@ -27,55 +37,9 @@ section
 	h1 
 		text-align left
 
-.impar
-	display none
-
-.new-job
-	background #2684e8
-	border-radius 20px
-	color bodybg
-	margin 1em .3em
-	max-width 542px
-	overflow hidden
-	text-align left
-	transition all .5s ease
-	vertical-align top
-	.job-button
-		background #1667bc
-		border-radius 20px
-		text-align center
-		transition all .2s ease-out
-		&:hover
-			background #00366e
-		a 
-			color bodybg
-			display block
-			padding .5em 2.45em
-			text-decoration none
-	.job-info
-		padding .5rem .3rem 0 .3rem
-		img
-			width 25px
-	.job-title
-		padding-bottom 1rem
-		h3
-			display block
-			font-size 16pt
-			margin 0
-
 .relative
 	position relative
-	
-@media (min-width: 575px)
-	.new-job, .closed-job
-		width 545px
-		display inline-block
-		
-@media (min-width: 845px)
-	.new-job, .closed-job
-		width 40%
-		&:nth-child(even)
-			margin-right 5%
+
 
 @media (min-width: 1165px)
 	.ccontainer
@@ -86,30 +50,10 @@ section
 		h1
 			margin-left .3em
 			text-align left
-			
-
-	#cerradas
-		// display flex
-		// flex-wrap wrap
-		// justify-content space-between
-		// padding 0 20px 0 78px
-		text-align center
+	
+	.mdc-card__media
+		flexbox flex
+		flex-flow row wrap
+		justify-content space-between
 		
-	.closed-job
-		width 545px	
-		// margin-right auto
-		&:nth-child(even)
-			margin-right auto	
 
-	.new-job
-		width 545px
-		&:nth-child(even)
-			margin-right auto
-		.job-info
-			display inline-block
-			width 375px
-		.job-button
-			display inline-block
-			vertical-align top
-			a 
-				padding 3.2em 2.15em
