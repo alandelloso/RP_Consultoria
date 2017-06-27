@@ -1,5 +1,5 @@
 function initialize() {
-  var rpConsultoria = new google.maps.LatLng(-34.6356038,-58.397069999999985);
+  var rpConsultoria = new google.maps.LatLng(-34.6270426,-58.3978349);
   var mapOptions = {
     zoom: 16,
     scrollwheel: false,
